@@ -185,7 +185,7 @@
             <span class="sep">•</span>
             <a href="<?= site_url('about-us') ?>">About Us</a>
             <span class="sep">•</span>
-            <a href="<?= site_url('photo-gallery') ?>">Gallery</a>
+            <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
             <span class="sep">•</span>
             <a href="<?= site_url('contact-us') ?>">Contact Us</a>
             <span class="sep">•</span>
