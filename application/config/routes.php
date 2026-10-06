@@ -20,6 +20,28 @@ $route['blog'] = 'blog/view';
 $route['privacy-policy'] = 'about/privacy';
 $route['terms-and-conditions'] = 'about/terms';
 
+// Product Catalogue Routes
+$route['products'] = 'products/index';
+$route['product-catalogue'] = 'products/index';
+
+// Dedicated Function Routes for Each Product
+$route['commercial-kitchen-equipment'] = 'products/commercial_kitchen';
+$route['bakery-equipment'] = 'products/bakery';
+$route['display-counter'] = 'products/display_counter';
+$route['refrigeration-equipment'] = 'products/refrigeration';
+$route['kitchen-ventilation-system'] = 'products/ventilation';
+$route['washing-equipment'] = 'products/washing';
+$route['lpg-gas-pipeline-installation'] = 'products/lpg_gas';
+
+$route['products/commercial-kitchen-equipment'] = 'products/commercial_kitchen';
+$route['products/bakery-equipment'] = 'products/bakery';
+$route['products/display-counter'] = 'products/display_counter';
+$route['products/refrigeration-equipment'] = 'products/refrigeration';
+$route['products/kitchen-ventilation-system'] = 'products/ventilation';
+$route['products/washing-equipment'] = 'products/washing';
+$route['products/lpg-gas-pipeline-installation'] = 'products/lpg_gas';
+$route['products/(:any)'] = 'products/detail/$1';
+
 
 // City Services Routes
 $route["home-shifting-in-(:any)"] = "city_services/home_shifting/$1";
@@ -28,13 +50,23 @@ $route["car-transport-in-(:any)"] = "city_services/car_transport/$1";
 $route["bike-transport-in-(:any)"] = "city_services/bike_transport/$1";
 
 // Services Routes
-$route["our-services"] = "services/index";
-$route["home-relocation"] = "services/homeShifting";
-$route["office-relocation"] = "services/office";
-$route["bike-transportation"] = "services/bike";
-$route["car-transportation"] = "services/car";
-$route["packing-and-moving"] = "services/packingMoving";
-$route["loading-unloading"] = "services/loadingUnloading";
+$route['services'] = 'services/index';
+$route['our-services'] = 'services/index';
+
+// Dedicated Function Routes for Each Service
+$route['services/commercial-kitchen-equipment'] = 'services/commercial_kitchen';
+$route['services/bakery-food-service-equipment'] = 'services/bakery';
+$route['services/refrigeration-ventilation-systems'] = 'services/ventilation';
+$route['services/lpg-gas-pipeline-installation'] = 'services/lpg_gas';
+$route['services/custom-fabrication-installation'] = 'services/fabrication';
+
+// Clean Aliases & Detail Dispatch
+$route['services/commercial-kitchen'] = 'services/commercial_kitchen';
+$route['services/bakery'] = 'services/bakery';
+$route['services/ventilation'] = 'services/ventilation';
+$route['services/lpg-gas'] = 'services/lpg_gas';
+$route['services/custom-fabrication'] = 'services/fabrication';
+$route['services/(:any)'] = 'services/detail/$1';
 
 // Legacy/Compatibility Routes
 $route["storage-services"] = "services/storage";

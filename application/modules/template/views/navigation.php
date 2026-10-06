@@ -117,45 +117,45 @@ $nav_schema = [
                   <div class="dropdown-gold-line"></div>
                 </div>
                 <div class="dropdown-items-grid">
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('products/commercial-kitchen-equipment') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Commercial Kitchen Equipment</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('products/bakery-equipment') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Bakery Equipment</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('products/display-counter') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Display Counter</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('products/refrigeration-equipment') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Refrigeration Equipment</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('products/kitchen-ventilation-system') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Kitchen Ventilation System</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('products/washing-equipment') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Washing Equipment</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('products/lpg-gas-pipeline-installation') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">L.P.G. Gas Pipeline Installation</span>
                   </a>
                 </div>
                 <div class="dropdown-box-footer">
                   <span class="footer-note"><i class="bi bi-shield-check text-gold"></i> Food Grade SS 304 Stainless Steel</span>
-                  <a href="<?= site_url('contact-us') ?>" class="footer-cta-link">Request Catalogue PDF <i class="bi bi-arrow-right"></i></a>
+                  <a href="<?= site_url('products') ?>" class="footer-cta-link">View All Products <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </li>
 
             <!-- Dropdown: Our Services (Screenshot 2) -->
             <li class="nav-item dropdown has-megamenu">
-              <a href="#servicesShowcase" class="nav-link dropdown-toggle <?= $active_tab === 'services' ? 'active' : '' ?>" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a href="<?= site_url('services') ?>" class="nav-link dropdown-toggle <?= $active_tab === 'services' ? 'active' : '' ?>" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span>Our Services</span>
                 <i class="bi bi-chevron-down nav-caret"></i>
               </a>
@@ -166,30 +166,30 @@ $nav_schema = [
                   <div class="dropdown-gold-line"></div>
                 </div>
                 <div class="dropdown-items-grid">
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('services/commercial-kitchen-equipment') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Commercial Kitchen Equipment</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('services/bakery-food-service-equipment') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Bakery & Food Service Equipment</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('services/refrigeration-ventilation-systems') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Refrigeration & Ventilation Systems</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('services/lpg-gas-pipeline-installation') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">L.P.G. Gas Pipeline Installation</span>
                   </a>
-                  <a href="<?= site_url('contact-us') ?>" class="dropdown-menu-item">
+                  <a href="<?= site_url('services/custom-fabrication-installation') ?>" class="dropdown-menu-item">
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Custom Fabrication & Installation</span>
                   </a>
                 </div>
                 <div class="dropdown-box-footer">
                   <span class="footer-note"><i class="bi bi-tools text-gold"></i> Complete Design, Fabrication & AMC</span>
-                  <a <?= $phonehtml ?> class="footer-cta-link">Consult Kitchen Expert <i class="bi bi-telephone-fill"></i></a>
+                  <a href="<?= site_url('services') ?>" class="footer-cta-link">View All Services <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </li>
@@ -306,13 +306,13 @@ $nav_schema = [
         </button>
         <div class="mobile-accordion-content">
           <ul class="mobile-sub-menu">
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Commercial Kitchen Equipment</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Bakery Equipment</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Display Counter</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Refrigeration Equipment</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Kitchen Ventilation System</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Washing Equipment</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> L.P.G. Gas Pipeline Installation</a></li>
+            <li><a href="<?= site_url('products/commercial-kitchen-equipment') ?>"><span class="gold-bullet-dot"></span> Commercial Kitchen Equipment</a></li>
+            <li><a href="<?= site_url('products/bakery-equipment') ?>"><span class="gold-bullet-dot"></span> Bakery Equipment</a></li>
+            <li><a href="<?= site_url('products/display-counter') ?>"><span class="gold-bullet-dot"></span> Display Counter</a></li>
+            <li><a href="<?= site_url('products/refrigeration-equipment') ?>"><span class="gold-bullet-dot"></span> Refrigeration Equipment</a></li>
+            <li><a href="<?= site_url('products/kitchen-ventilation-system') ?>"><span class="gold-bullet-dot"></span> Kitchen Ventilation System</a></li>
+            <li><a href="<?= site_url('products/washing-equipment') ?>"><span class="gold-bullet-dot"></span> Washing Equipment</a></li>
+            <li><a href="<?= site_url('products/lpg-gas-pipeline-installation') ?>"><span class="gold-bullet-dot"></span> L.P.G. Gas Pipeline Installation</a></li>
           </ul>
         </div>
       </li>
@@ -329,11 +329,11 @@ $nav_schema = [
         </button>
         <div class="mobile-accordion-content">
           <ul class="mobile-sub-menu">
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Commercial Kitchen Setup</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Bakery & Food Service Equipment</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Refrigeration & Ventilation Systems</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> L.P.G. Gas Pipeline Installation</a></li>
-            <li><a href="<?= site_url('contact-us') ?>"><span class="gold-bullet-dot"></span> Custom Fabrication & Installation</a></li>
+            <li><a href="<?= site_url('services/commercial-kitchen-equipment') ?>"><span class="gold-bullet-dot"></span> Commercial Kitchen Equipment</a></li>
+            <li><a href="<?= site_url('services/bakery-food-service-equipment') ?>"><span class="gold-bullet-dot"></span> Bakery &amp; Food Service Equipment</a></li>
+            <li><a href="<?= site_url('services/refrigeration-ventilation-systems') ?>"><span class="gold-bullet-dot"></span> Refrigeration &amp; Ventilation Systems</a></li>
+            <li><a href="<?= site_url('services/lpg-gas-pipeline-installation') ?>"><span class="gold-bullet-dot"></span> L.P.G. Gas Pipeline Installation</a></li>
+            <li><a href="<?= site_url('services/custom-fabrication-installation') ?>"><span class="gold-bullet-dot"></span> Custom Fabrication &amp; Installation</a></li>
           </ul>
         </div>
       </li>

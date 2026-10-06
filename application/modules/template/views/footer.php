@@ -55,13 +55,13 @@
           <div class="footer-widget">
             <h4 class="footer-widget-title">Product Catalogue</h4>
             <ul class="footer-menu-links">
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Commercial Kitchen Equipment</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Bakery Equipment</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Display Counter</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Refrigeration Equipment</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Kitchen Ventilation System</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Washing Equipment</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> L.P.G. Gas Pipeline Installation</a></li>
+              <li><a href="<?= site_url('products/commercial-kitchen-equipment') ?>"><i class="bi bi-arrow-right-short"></i> Commercial Kitchen Equipment</a></li>
+              <li><a href="<?= site_url('products/bakery-equipment') ?>"><i class="bi bi-arrow-right-short"></i> Bakery Equipment</a></li>
+              <li><a href="<?= site_url('products/display-counter') ?>"><i class="bi bi-arrow-right-short"></i> Display Counter</a></li>
+              <li><a href="<?= site_url('products/refrigeration-equipment') ?>"><i class="bi bi-arrow-right-short"></i> Refrigeration Equipment</a></li>
+              <li><a href="<?= site_url('products/kitchen-ventilation-system') ?>"><i class="bi bi-arrow-right-short"></i> Kitchen Ventilation System</a></li>
+              <li><a href="<?= site_url('products/washing-equipment') ?>"><i class="bi bi-arrow-right-short"></i> Washing Equipment</a></li>
+              <li><a href="<?= site_url('products/lpg-gas-pipeline-installation') ?>"><i class="bi bi-arrow-right-short"></i> L.P.G. Gas Pipeline Installation</a></li>
             </ul>
           </div>
         </div>
@@ -71,11 +71,11 @@
           <div class="footer-widget">
             <h4 class="footer-widget-title">Our Services</h4>
             <ul class="footer-menu-links">
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Commercial Kitchen Equipment</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Bakery &amp; Food Service Equipment</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Refrigeration &amp; Ventilation Systems</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> L.P.G. Gas Pipeline Installation</a></li>
-              <li><a href="<?= site_url('contact-us') ?>"><i class="bi bi-arrow-right-short"></i> Custom Fabrication &amp; Installation</a></li>
+              <li><a href="<?= site_url('services/commercial-kitchen-equipment') ?>"><i class="bi bi-arrow-right-short"></i> Commercial Kitchen Equipment</a></li>
+              <li><a href="<?= site_url('services/bakery-food-service-equipment') ?>"><i class="bi bi-arrow-right-short"></i> Bakery &amp; Food Service Equipment</a></li>
+              <li><a href="<?= site_url('services/refrigeration-ventilation-systems') ?>"><i class="bi bi-arrow-right-short"></i> Refrigeration &amp; Ventilation Systems</a></li>
+              <li><a href="<?= site_url('services/lpg-gas-pipeline-installation') ?>"><i class="bi bi-arrow-right-short"></i> L.P.G. Gas Pipeline Installation</a></li>
+              <li><a href="<?= site_url('services/custom-fabrication-installation') ?>"><i class="bi bi-arrow-right-short"></i> Custom Fabrication &amp; Installation</a></li>
             </ul>
           </div>
         </div>
@@ -103,7 +103,7 @@
                 <div class="contact-item-content">
                   <span class="contact-item-label">Direct Lines:</span>
                   <a <?= $phonehtml ?> class="contact-item-link"><?= $phone ?></a>
-                  <a <?= $phone1html1 ?> class="contact-item-link"><?= $phone1 ?></a>
+                  <a <?= $phonehtml1 ?> class="contact-item-link"><?= $phone1 ?></a>
                 </div>
               </div>
 
@@ -113,7 +113,7 @@
                 </div>
                 <div class="contact-item-content">
                   <span class="contact-item-label">Technical Inquiries:</span>
-                  <a <?= $mailhtml ?> class="contact-item-link"><?= $mail ?></a>
+                  <a href="<?= $mailhtml ?>" class="contact-item-link"><?= $mail ?></a>
                 </div>
               </div>
 
@@ -210,5 +210,8 @@
 
 <!-- AJAX Form Handler -->
 <script src="<?= base_url('assets/js/form.js') ?>"></script>
+
+<!-- Main Application Combined Script -->
+<script src="<?= base_url('assets/js/main.js') ?>?v=<?= @filemtime(FCPATH . 'assets/js/main.js') ?: '1.0' ?>"></script>
 </body>
 </html>
