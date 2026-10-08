@@ -6951,3 +6951,513 @@ textarea.cnt-input-field {
 }
 
 
+/* --------------------------------------------------------------------------
+   1. Section Foundations
+   -------------------------------------------------------------------------- */
+.service-overview-section {
+  position: relative;
+  background-color: #f8fafc;
+  padding: 60px 0 75px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.service-turnkey-section {
+  position: relative;
+  background-color: #ffffff;
+  padding: 70px 0 80px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.service-cta-section {
+  position: relative;
+  background-color: #ffffff;
+  padding: 70px 0;
+}
+
+/* --------------------------------------------------------------------------
+   2. Typography & Badges
+   -------------------------------------------------------------------------- */
+.service-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fefce8;
+  border: 1px solid var(--color-gold);
+  color: #854d0e;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.12);
+}
+
+.service-section-title {
+  color: var(--color-dark);
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.service-section-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+.text-brand-highlight {
+  color: var(--color-primary);
+}
+
+/* --------------------------------------------------------------------------
+   3. Service Overview Card & Capability Highlights
+   -------------------------------------------------------------------------- */
+.service-content-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-light);
+  border-radius: 22px;
+  padding: 44px 40px;
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-content-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-gold) 50%, var(--color-primary) 100%);
+}
+
+.service-content-title {
+  color: var(--color-dark);
+  font-size: clamp(1.45rem, 2.2vw, 1.95rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.service-content-lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+.service-content-desc {
+  font-size: 0.94rem;
+  line-height: 1.65;
+  color: var(--color-text-muted);
+}
+
+/* Action Buttons */
+.btn-service-primary {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(152, 1, 1, 0.22);
+}
+
+.btn-service-primary:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(152, 1, 1, 0.32);
+}
+
+.btn-service-secondary {
+  background: #ffffff;
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 22px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.22s ease;
+  text-decoration: none;
+}
+
+.btn-service-secondary:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(152, 1, 1, 0.2);
+}
+
+/* Capability Highlight Pills */
+.service-features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.service-feature-pill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f8fafc;
+  border: 1px solid var(--color-border-light);
+  border-radius: 14px;
+  padding: 13px 18px;
+  transition: all 0.25s ease;
+}
+
+.service-feature-pill:hover {
+  background: #ffffff;
+  border-color: var(--color-gold);
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.feature-pill-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #fefce8;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.service-feature-pill:hover .feature-pill-icon {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.feature-pill-info strong {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 2px;
+}
+
+.feature-pill-info span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  display: block;
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   4. Turnkey Setup & Execution Workflow Cards (5 Scope Steps)
+   -------------------------------------------------------------------------- */
+.turnkey-step-card {
+  background: #f8fafc;
+  border: 1px solid var(--color-border-light);
+  border-radius: 18px;
+  padding: 26px 22px;
+  height: 100%;
+  position: relative;
+  transition: all 0.28s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.turnkey-step-card:hover {
+  background: #ffffff;
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.turnkey-step-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.turnkey-num-badge {
+  font-size: 1.7rem;
+  font-weight: 900;
+  color: #cbd5e1;
+  line-height: 1;
+  margin-bottom: 0;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.turnkey-step-card:hover .turnkey-num-badge {
+  color: var(--color-gold);
+}
+
+.turnkey-title {
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.turnkey-desc {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   5. Consultation & Direct BOQ Proposal Console
+   -------------------------------------------------------------------------- */
+.service-cta-card-light {
+  background: #ffffff;
+  border: 1.5px solid var(--color-border-light);
+  border-radius: 24px;
+  padding: 44px 40px;
+  box-shadow: 0 16px 45px rgba(15, 23, 42, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-cta-card-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-gold) 50%, var(--color-primary) 100%);
+}
+
+.cta-light-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fefce8;
+  border: 1px solid var(--color-gold);
+  color: #854d0e;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+
+.cta-light-title {
+  color: var(--color-dark);
+  font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.26;
+  letter-spacing: -0.015em;
+}
+
+.cta-light-desc {
+  color: var(--color-text-muted);
+  font-size: 0.94rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.cta-perks-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cta-perk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1px solid var(--color-border-light);
+  padding: 7px 13px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #334155;
+  transition: all 0.2s ease;
+}
+
+.cta-perk-badge:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+/* Action Console Box */
+.cta-action-console {
+  background: #f8fafc;
+  border: 1.5px solid var(--color-border-light);
+  border-radius: 20px;
+  padding: 24px 22px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
+}
+
+.cta-status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+  display: inline-block;
+  animation: ctaStatusPulse 2s infinite;
+}
+
+@keyframes ctaStatusPulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.cta-console-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--color-dark);
+}
+
+.btn-cta-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #25d366;
+  color: #ffffff;
+  border-radius: 14px;
+  padding: 12px 16px;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.22);
+  text-decoration: none;
+}
+
+.btn-cta-whatsapp:hover {
+  background: #20bd5a;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.32);
+}
+
+.cta-btn-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.cta-btn-text strong {
+  display: block;
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+.cta-btn-text span {
+  display: block;
+  font-size: 0.72rem;
+  opacity: 0.9;
+}
+
+.cta-btn-arrow {
+  font-size: 1rem;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.btn-cta-whatsapp:hover .cta-btn-arrow {
+  transform: translateX(3px);
+}
+
+.btn-cta-quote {
+  background: #ffffff;
+  border: 1.5px solid var(--color-border-light);
+  color: var(--color-dark);
+  font-weight: 700;
+  font-size: 0.86rem;
+  padding: 11px 16px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.22s ease;
+  cursor: pointer;
+}
+
+.btn-cta-quote:hover {
+  border-color: var(--color-primary);
+  background: #fef2f2;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(152, 1, 1, 0.12);
+}
+
+.cta-phone-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cta-phone-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   6. Responsive Breakpoint Rules
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .service-overview-section,
+  .service-turnkey-section,
+  .service-cta-section {
+    padding: 50px 0;
+  }
+
+  .service-content-card,
+  .service-cta-card-light {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-overview-section,
+  .service-turnkey-section,
+  .service-cta-section {
+    padding: 40px 0 50px;
+  }
+
+  .service-content-card,
+  .service-cta-card-light {
+    padding: 24px 18px;
+  }
+
+  .cta-perks-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cta-perk-badge {
+    width: 100%;
+  }
+}
+
