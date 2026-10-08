@@ -44,7 +44,7 @@ $nav_schema = [
 </script>
 
 <!-- Main Header / Navigation -->
-<header id="mainHeader" class="site-header <?= !$is_home ? 'header-solid' : 'header-transparent' ?>">
+<header id="mainHeader" class="site-header header-solid">
   <!-- Top Utility Bar (scrolls with page) -->
   <div class="top-utility-bar" id="topUtilityBar">
     <div class="container-fluid px-3 px-xl-5">
@@ -371,9 +371,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!mainNavbar) return;
     const topbarHeight = topbar ? topbar.offsetHeight : 36;
     if (window.scrollY >= topbarHeight) {
-      mainNavbar.classList.add('is-sticky');
+      if (!mainNavbar.classList.contains('is-sticky')) {
+        mainNavbar.classList.add('is-sticky');
+        if (header) header.style.paddingBottom = mainNavbar.offsetHeight + 'px';
+      }
     } else {
-      mainNavbar.classList.remove('is-sticky');
+      if (mainNavbar.classList.contains('is-sticky')) {
+        mainNavbar.classList.remove('is-sticky');
+        if (header) header.style.paddingBottom = '0px';
+      }
     }
   }
 
