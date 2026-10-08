@@ -319,6 +319,7 @@ body.body-menu-locked {
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
   padding: 0;
   margin-top: 10px;
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   transform: translateY(12px);
@@ -6211,4 +6212,742 @@ textarea.cnt-input-field {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* --------------------------------------------------------------------------
+   1. Section Layout & Foundations
+   -------------------------------------------------------------------------- */
+.bakery-overview-section {
+  position: relative;
+  background-color: #f8fafc;
+  padding: 65px 0 80px;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.product-specs-section {
+  position: relative;
+  background-color: #f8fafc;
+  padding: 80px 0 90px;
+}
+
+.product-turnkey-section {
+  position: relative;
+  background-color: #ffffff;
+  padding: 80px 0 90px;
+  border-top: 1px solid var(--color-border-light);
+}
+
+.product-cta-section {
+  position: relative;
+  background-color: #f8fafc;
+  padding: 85px 0;
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* --------------------------------------------------------------------------
+   2. Typography & Header Accents
+   -------------------------------------------------------------------------- */
+.product-badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fefce8;
+  border: 1px solid var(--color-gold);
+  color: #854d0e;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 50px;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.12);
+}
+
+.product-section-title {
+  color: var(--color-dark);
+  font-size: clamp(1.8rem, 2.7vw, 2.45rem);
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
+}
+
+.text-brand-highlight {
+  color: var(--color-primary);
+}
+
+.product-section-subtitle {
+  color: var(--color-text-muted);
+  font-size: 0.96rem;
+  line-height: 1.62;
+  max-width: 720px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Row 1: Side-Scrolling Product Image Gallery
+   -------------------------------------------------------------------------- */
+.bakery-scroll-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-scroll-arrow {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid var(--color-border-light);
+  color: var(--color-dark);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+.btn-scroll-arrow:hover {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(152, 1, 1, 0.22);
+}
+
+.btn-scroll-arrow:active {
+  transform: translateY(0);
+}
+
+.bakery-scroll-container {
+  width: 100%;
+  position: relative;
+}
+
+.bakery-scroll-track {
+  display: flex;
+  gap: 22px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 10px 4px 20px;
+  cursor: grab;
+  user-select: none;
+}
+
+.bakery-scroll-track.is-dragging {
+  cursor: grabbing;
+  scroll-behavior: auto;
+}
+
+.bakery-scroll-track::-webkit-scrollbar {
+  height: 7px;
+}
+
+.bakery-scroll-track::-webkit-scrollbar-track {
+  background: #e2e8f0;
+  border-radius: 10px;
+}
+
+.bakery-scroll-track::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+
+.bakery-scroll-track::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+.bakery-image-card {
+  flex: 0 0 280px;
+  max-width: 280px;
+  scroll-snap-align: start;
+  background: #ffffff;
+  border: 1px solid var(--color-border-light);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.bakery-image-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-gold);
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.1);
+}
+
+.bakery-image-frame {
+  height: 210px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.bakery-card-img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: drop-shadow(0 6px 14px rgba(15, 23, 42, 0.08));
+}
+
+.bakery-image-card:hover .bakery-card-img {
+  transform: scale(1.08);
+}
+
+.bakery-image-tag {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(11, 15, 25, 0.85);
+  color: var(--color-text-light);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+  z-index: 2;
+}
+
+.bakery-image-caption {
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.bakery-image-caption h5 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 4px;
+}
+
+.bakery-image-caption p {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  line-height: 1.45;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Row 2: Overview Content Card & Feature Pills
+   -------------------------------------------------------------------------- */
+.bakery-content-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-light);
+  border-radius: 22px;
+  padding: 44px 40px;
+  box-shadow: 0 8px 32px rgba(15, 23, 42, 0.04);
+  position: relative;
+  overflow: hidden;
+}
+
+.bakery-content-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-gold) 50%, var(--color-primary) 100%);
+}
+
+.bakery-content-title {
+  color: var(--color-dark);
+  font-size: clamp(1.45rem, 2.3vw, 1.95rem);
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.32;
+  margin-bottom: 14px;
+}
+
+.bakery-content-text p {
+  font-size: 0.94rem;
+  color: var(--color-text-dark);
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.bakery-content-text p:last-child {
+  margin-bottom: 0;
+}
+
+.btn-primary-custom {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.22s ease;
+  box-shadow: 0 4px 14px rgba(152, 1, 1, 0.22);
+}
+
+.btn-primary-custom:hover {
+  background: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(152, 1, 1, 0.32);
+}
+
+.bakery-features-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bakery-feature-pill {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f8fafc;
+  border: 1px solid var(--color-border-light);
+  border-radius: 14px;
+  padding: 13px 18px;
+  transition: all 0.25s ease;
+}
+
+.bakery-feature-pill:hover {
+  background: #ffffff;
+  border-color: var(--color-gold);
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+}
+
+.feature-pill-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #fefce8;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.25s ease;
+}
+
+.bakery-feature-pill:hover .feature-pill-icon {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.feature-pill-info strong {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 2px;
+}
+
+.feature-pill-info span {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  display: block;
+  line-height: 1.35;
+}
+
+/* --------------------------------------------------------------------------
+   5. Technical Comparison Matrix Table
+   -------------------------------------------------------------------------- */
+.product-matrix-card {
+  background: #ffffff;
+  border: 1px solid var(--color-border-light);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(15, 23, 42, 0.04);
+}
+
+.product-matrix-table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: collapse;
+}
+
+.product-matrix-table th {
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 16px 20px;
+  border: none;
+  white-space: nowrap;
+}
+
+.product-matrix-table td {
+  padding: 16px 20px;
+  font-size: 0.88rem;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.product-matrix-table tr:hover td {
+  background: #f8fafc;
+}
+
+.table-model-title {
+  font-weight: 800;
+  color: #0f172a;
+  display: block;
+}
+
+.table-model-sub {
+  font-size: 0.74rem;
+  color: #64748b;
+}
+
+.btn-matrix-quote {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 20px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  background: #ffffff;
+  transition: all 0.22s ease;
+  line-height: 1.25;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-matrix-quote:hover {
+  background: var(--color-primary);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(152, 1, 1, 0.25);
+}
+
+/* --------------------------------------------------------------------------
+   6. Turnkey Setup Process Cards
+   -------------------------------------------------------------------------- */
+.turnkey-step-card {
+  background: #f8fafc;
+  border: 1px solid var(--color-border-light);
+  border-radius: 18px;
+  padding: 28px 22px 24px;
+  height: 100%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.turnkey-step-card:hover {
+  background: #ffffff;
+  border-color: var(--color-gold);
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+}
+
+.turnkey-step-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.turnkey-num-badge {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: #cbd5e1;
+  line-height: 1;
+  margin-bottom: 0;
+  flex-shrink: 0;
+  transition: color 0.3s ease;
+}
+
+.turnkey-step-card:hover .turnkey-num-badge {
+  color: var(--color-gold);
+}
+
+.turnkey-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 0;
+  line-height: 1.3;
+}
+
+.turnkey-desc {
+  font-size: 0.86rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. Consultation & Quote Console (Light Background Design)
+   -------------------------------------------------------------------------- */
+.product-cta-card-light {
+  background: #ffffff;
+  border: 1.5px solid var(--color-border-light);
+  border-radius: 24px;
+  padding: 48px 44px;
+  box-shadow: 0 16px 45px rgba(15, 23, 42, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-cta-card-light::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-gold) 50%, var(--color-primary) 100%);
+}
+
+.cta-light-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #fefce8;
+  border: 1px solid var(--color-gold);
+  color: #854d0e;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 50px;
+}
+
+.cta-light-title {
+  color: var(--color-dark);
+  font-size: clamp(1.65rem, 2.5vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.cta-light-desc {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.62;
+  max-width: 620px;
+}
+
+.cta-perks-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cta-perk-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #334155;
+  transition: all 0.2s ease;
+}
+
+.cta-perk-badge:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.cta-action-console {
+  background: #f8fafc;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 26px 24px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.03);
+}
+
+.cta-status-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+  display: inline-block;
+  animation: ctaStatusPulse 2s infinite;
+}
+
+@keyframes ctaStatusPulse {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
+  70% { box-shadow: 0 0 0 6px rgba(16, 185, 129, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
+}
+
+.cta-console-title {
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: var(--color-dark);
+}
+
+.btn-cta-whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #25d366;
+  color: #ffffff !important;
+  border-radius: 14px;
+  padding: 13px 18px;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(37, 211, 102, 0.24);
+  text-decoration: none;
+}
+
+.btn-cta-whatsapp:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.35);
+}
+
+.cta-btn-icon {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  flex-shrink: 0;
+}
+
+.cta-btn-text strong {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.cta-btn-text span {
+  display: block;
+  font-size: 0.74rem;
+  opacity: 0.9;
+}
+
+.cta-btn-arrow {
+  font-size: 1.1rem;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.btn-cta-whatsapp:hover .cta-btn-arrow {
+  transform: translateX(4px);
+}
+
+.btn-cta-quote {
+  background: #ffffff;
+  border: 1.5px solid var(--color-border-light);
+  color: var(--color-dark);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 12px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.22s ease;
+  cursor: pointer;
+}
+
+.btn-cta-quote:hover {
+  border-color: var(--color-primary);
+  background: #fef2f2;
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(152, 1, 1, 0.12);
+}
+
+.cta-phone-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cta-phone-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   8. Responsive Breakpoint Refinements
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+  .bakery-overview-section,
+  .product-specs-section,
+  .product-turnkey-section,
+  .product-cta-section {
+    padding: 50px 0;
+  }
+
+  .bakery-content-card {
+    padding: 32px 24px;
+  }
+
+  .product-cta-card-light {
+    padding: 34px 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .bakery-overview-section,
+  .product-specs-section,
+  .product-turnkey-section,
+  .product-cta-section {
+    padding: 40px 0 55px;
+  }
+
+  .bakery-image-card {
+    flex: 0 0 240px;
+    max-width: 240px;
+  }
+
+  .bakery-image-frame {
+    height: 175px;
+    padding: 12px;
+  }
+
+  .bakery-content-card,
+  .product-cta-card-light {
+    padding: 26px 18px;
+  }
+
+  .cta-perks-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .cta-perk-badge {
+    width: 100%;
+  }
+
+  .product-matrix-card {
+    border-radius: 14px;
+  }
+}
+
 

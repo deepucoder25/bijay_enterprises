@@ -146,10 +146,6 @@ $nav_schema = [
                     <span class="item-title">L.P.G. Gas Pipeline Installation</span>
                   </a>
                 </div>
-                <div class="dropdown-box-footer">
-                  <span class="footer-note"><i class="bi bi-shield-check text-gold"></i> Food Grade SS 304 Stainless Steel</span>
-                  <a href="<?= site_url('products') ?>" class="footer-cta-link">View All Products <i class="bi bi-arrow-right"></i></a>
-                </div>
               </div>
             </li>
 
@@ -186,10 +182,6 @@ $nav_schema = [
                     <span class="gold-bullet-dot"></span>
                     <span class="item-title">Custom Fabrication & Installation</span>
                   </a>
-                </div>
-                <div class="dropdown-box-footer">
-                  <span class="footer-note"><i class="bi bi-tools text-gold"></i> Complete Design, Fabrication & AMC</span>
-                  <a href="<?= site_url('services') ?>" class="footer-cta-link">View All Services <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
             </li>
