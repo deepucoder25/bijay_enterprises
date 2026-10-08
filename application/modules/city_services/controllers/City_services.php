@@ -17,8 +17,8 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Best Home Shifting Services in $city | " . $this->comp['company3'];
-        $data['description'] = "Get reliable, safe, and professional home shifting services in $city from " . $this->comp['company3'] . ". Smooth door-to-door household relocation at affordable rates.";
+        $data['title'] = "Commercial Kitchen Equipment Supply & Setup in $city | " . $this->comp['company3'];
+        $data['description'] = "Get reliable commercial kitchen equipment manufacturing, SS 304 fabrication, and turnkey setup in $city from " . $this->comp['company3'] . ". Call " . $this->comp['phone'] . ".";
         $data['module'] = "city_services";
         $data['view_file'] = "home_shifting";
         echo Modules::run('template/layout2', $data);
@@ -29,8 +29,8 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Professional Office Relocation Services in $city | " . $this->comp['company3'];
-        $data['description'] = "Smooth and secure office shifting services in $city by " . $this->comp['company3'] . ". Minimize downtime with our experienced office relocation experts.";
+        $data['title'] = "Hotel & Restaurant Kitchen Setup in $city | " . $this->comp['company3'];
+        $data['description'] = "Professional hotel, canteen, and restaurant commercial kitchen installation in $city by " . $this->comp['company3'] . ". Complete CAD planning and SS fabrication.";
         $data['module'] = "city_services";
         $data['view_file'] = "office_shifting";
         echo Modules::run('template/layout2', $data);
@@ -41,8 +41,8 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Safe Car Transportation Services in $city | " . $this->comp['company3'];
-        $data['description'] = "Secure car carrier and transportation services in $city by " . $this->comp['company3'] . ". On-time and damage-free vehicle delivery across India.";
+        $data['title'] = "Commercial Kitchen Machinery Transport & Delivery in $city | " . $this->comp['company3'];
+        $data['description'] = "Safe heavy kitchen machinery transit, crating, and on-site delivery in $city by " . $this->comp['company3'] . ". Damage-free equipment dispatch across India.";
         $data['module'] = "city_services";
         $data['view_file'] = "car_transport";
         echo Modules::run('template/layout2', $data);
@@ -53,8 +53,8 @@ class City_services extends MX_Controller
         $city = $this->format_city($city_slug);
         $data['city'] = $city;
         $data['ctlink'] = $city_slug;
-        $data['title'] = "Reliable Bike Transportation Services in $city | " . $this->comp['company3'];
-        $data['description'] = "Hire trusted two-wheeler and bike shifting services in $city from " . $this->comp['company3'] . ". We ensure scratch-free and timely delivery.";
+        $data['title'] = "Bakery & Food Machine Dispatch in $city | " . $this->comp['company3'];
+        $data['description'] = "Fast delivery and installation of industrial bakery ovens, mixers, and SS equipment in $city from " . $this->comp['company3'] . ".";
         $data['module'] = "city_services";
         $data['view_file'] = "bike_transport";
         echo Modules::run('template/layout2', $data);

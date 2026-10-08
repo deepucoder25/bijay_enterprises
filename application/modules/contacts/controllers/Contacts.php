@@ -9,8 +9,8 @@ class Contacts extends MX_Controller
     }
     function index()
     {
-        $data['title'] = "Contact Us | " . $this->comp['company3'];
-        $data['description'] = "Get in touch with " . $this->comp['company3'] . " for all your relocation and transportation needs. Call us at " . $this->comp['phone'] . ".";
+        $data['title'] = "Contact Us | " . $this->comp['company3'] . " - Siliguri, West Bengal";
+        $data['description'] = "Get in touch with " . $this->comp['company3'] . " for commercial kitchen equipment inquiries, turnkey bakery projects, factory quotes, and custom SS 304 fabrication in Siliguri. Call " . $this->comp['phone'] . ".";
         $data['module'] = "contacts";
         $data['view_file'] = "contacts";
         echo Modules::run('template/layout2', $data);

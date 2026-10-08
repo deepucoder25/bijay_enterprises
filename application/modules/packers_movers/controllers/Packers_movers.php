@@ -4,16 +4,16 @@ class Packers_movers extends MX_Controller
 
     function index()
     {
-        $data['title'] = "All India Service " . $this->comp['company3'];
-        $data['description'] = $this->comp['company3'] . " is best packers and movers service provider.";
+        $data['title'] = "All India Commercial Kitchen Supply & Setup | " . $this->comp['company3'];
+        $data['description'] = $this->comp['company3'] . " supplies commercial kitchen equipment and bakery machinery across India.";
         $data['module'] = "packers_movers";
         $data['view_file'] = "states";
         echo Modules::run('template/layout2', $data);
     }
     function state()
     {
-        $data['title'] = "All India Service " . $this->comp['company3'];
-        $data['description'] = $this->comp['company3'] . " is best packers and movers service provider.";
+        $data['title'] = "All India Commercial Kitchen Supply & Setup | " . $this->comp['company3'];
+        $data['description'] = $this->comp['company3'] . " supplies commercial kitchen equipment and bakery machinery across India.";
         $data['module'] = "packers_movers";
         $data['view_file'] = "states";
         echo Modules::run('template/layout2', $data);
@@ -27,9 +27,9 @@ class Packers_movers extends MX_Controller
         $state = ucwords(str_replace("-", " ", $state));
         $data = array(
             "state" => $state,
-            "title" => $this->comp['company3'] . " in $state",
-            "description" => $this->comp['company3'] . " in $state",
-            "keywords" => "$state " . $this->comp['company3'] . " in $state",
+            "title" => "Commercial Kitchen & Bakery Equipment in $state | " . $this->comp['company3'],
+            "description" => "Looking for Commercial Kitchen Equipment or Bakery Machinery in $state? " . $this->comp['company3'] . " provides turnkey SS 304 fabrication, cooking ranges, display counters, and setup.",
+            "keywords" => "Commercial kitchen equipment in $state, bakery machines $state, SS fabrication $state, " . $this->comp['company3'],
             "module" => "packers_movers",
             "view_file" => "city_list",
         );
@@ -48,10 +48,9 @@ class Packers_movers extends MX_Controller
                 return $s;
             }
         }
-        //edit by Arshad 15-11-2024
         return array(
-            'title' => "Best Packers and Movers in $city, $state | " . $this->comp['company3'],
-            "desc" => "Hire top-rated packers and movers in $city, $state. " . $this->comp['company3'] . " offers reliable household shifting and vehicle transport services at affordable rates."
+            'title' => "Commercial Kitchen & Bakery Equipment in $city, $state | " . $this->comp['company3'],
+            "desc" => "Looking for Commercial Kitchen and Bakery Equipment in $city, $state? " . $this->comp['company3'] . " offers Food-Grade SS 304 fabrication, cooking ranges, display counters, and turnkey kitchen setup."
         );
     }
     function city($state = 'Bihar', $city = 'Patna')
@@ -69,10 +68,7 @@ class Packers_movers extends MX_Controller
             //'img' => base_url('assets') . "/img/state/google/$statelink.png",
             "title" => $seo['title'],
             "description" => $seo['desc'],
-            "keywords" => "movers and packers in $city, Movers Packers $city, Movers near me $city, Packers and movers in $city, Moving companies near me $city, Movers $city, Packers and movers near me $city",
-            "Removal companies in $city, Moving services in $city, Cheap movers in $city, Local movers in $city, Local moving companies in $city",
-            "$city best moving companies, House movers $city, Packers movers $city, Moving services near $city, House removals $city, Cheap moving companies in $city",
-            "Professional movers in $city, House movers near $city, Cheap movers $city, Best packers and movers in $city, Affordable movers $city, International movers from $city, International moving companies in $city",
+            "keywords" => "commercial kitchen equipment $city, bakery equipment manufacturer $city, SS 304 fabrication $city, display counter $city, restaurant equipment $city, kitchen exhaust hood $city, LPG pipeline $city",
             "module" => "packers_movers",
             "view_file" => "view_service",
         );

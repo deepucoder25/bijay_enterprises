@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -53,96 +48,96 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
     <div class="bakery-scroll-container position-relative mb-4 pb-2">
       <div class="bakery-scroll-track" id="bakeryScrollTrack">
 
-        <!-- Image 1: Triple Bowl Deep Pot Wash Sink -->
+        <!-- Image 1: Undercounter Dishwasher -->
         <a href="#washingSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series WS-01</span>
             <img src="<?= base_url('assets/img/washing-equipment.jpg') ?>" 
-                 alt="Triple Bowl Pot Wash Sink" class="bakery-card-img" loading="lazy">
+                 alt="Undercounter Commercial Dishwasher" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Triple Bowl Pot Sink</h5>
-            <p>Wash, rinse &amp; sanitize bowls with pre-rinse faucet</p>
+            <h5>Undercounter Dishwasher</h5>
+            <p>Compact front-loading commercial glass &amp; dish washer</p>
           </div>
         </a>
 
-        <!-- Image 2: Double Bowl Sink with Drain Board -->
+        <!-- Image 2: Hood Type Dish Washer -->
         <a href="#washingSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series WS-02</span>
-            <img src="<?= base_url('assets/img/washing-equipment.jpg') ?>" 
-                 alt="Double Bowl Sink with Drainboard" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/washing-equipment1.jpg') ?>" 
+                 alt="Hood Type Dish Washer 60x29x80" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Double Bowl Sink</h5>
-            <p>Seamless bowls with ribbed drying drainboard</p>
+            <h5>Hood Type Dish Washer</h5>
+            <p>Size: 60"L × 29"W × 80"H • Pass-through hood dishwasher</p>
           </div>
         </a>
 
-        <!-- Image 3: Dishwasher Entry & Exit Landing Table -->
+        <!-- Image 3: Dumping Table with Garbage -->
         <a href="#washingSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series WS-03</span>
-            <img src="<?= base_url('assets/img/washing-equipment.jpg') ?>" 
-                 alt="Dishwasher Infeed and Outfeed Table" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/washing-equipment2.jpg') ?>" 
+                 alt="Dumping Table with Garbage 48x24x34+6" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Dishwasher Tables</h5>
-            <p>Slotted rack slide guide for hood dishwashers</p>
+            <h5>Dumping Table with Garbage</h5>
+            <p>Size: 48"L × 24"W × 34"H + 6" • Splashback &amp; scrap disposal hole</p>
           </div>
         </a>
 
-        <!-- Image 4: Soiled Plate Scrap Table with Chute -->
+        <!-- Image 4: Two Unit Sink -->
         <a href="#washingSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series WS-04</span>
-            <img src="<?= base_url('assets/img/washing-equipment.jpg') ?>" 
-                 alt="Soiled Plate Scrap Table" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/washing-equipment3.jpg') ?>" 
+                 alt="Two Unit Sink with Splashback 48x24x34+6" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Plate Scrap Table</h5>
-            <p>Garbage chute hole &amp; dish rack sorting shelf</p>
+            <h5>Two Unit Sink with Splashback</h5>
+            <p>Size: 48"L × 24"W × 34"H + 6" • Deep dual bowl pot wash station</p>
           </div>
         </a>
 
-        <!-- Image 5: Under-Sink SS Grease Trap -->
+        <!-- Image 5: Soil Dish Table with Garbage -->
         <a href="#washingSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series WS-05</span>
-            <img src="<?= base_url('assets/img/washing-equipment.jpg') ?>" 
-                 alt="Under-Sink Stainless Grease Trap" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/washing-equipment4.jpg') ?>" 
+                 alt="Soil Dish Table with Garbage 48x24x34+15" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Grease Interceptors</h5>
-            <p>Multi-baffle grease separation preventing jams</p>
+            <h5>Soil Dish Table with Garbage</h5>
+            <p>Size: 48"L × 24"W × 34"H + 15" • Overhead rack &amp; waste chute</p>
           </div>
         </a>
 
-        <!-- Image 6: Mobile Plate & Tray Landing Trolley -->
+        <!-- Image 6: Wall Hanging Plate & Glass Rack -->
         <a href="#washingSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series WS-06</span>
-            <img src="<?= base_url('assets/img/washing-equipment.jpg') ?>" 
-                 alt="Mobile Plate & Tray Trolley" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/washing-equipment5.jpg') ?>" 
+                 alt="Wall Hanging Plate and Glass Rack" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Tray &amp; Plate Trolleys</h5>
-            <p>Swiveling non-marking wheels with foot brakes</p>
+            <h5>Wall Hanging Plate &amp; Glass Rack</h5>
+            <p>Wall-mounted stainless steel drying rack for plates and tumblers</p>
           </div>
         </a>
 
-        <!-- Image 7: Turnkey Dishwash Setup -->
-        <div class="bakery-image-card">
+        <!-- Image 7: Three Unit Sink -->
+        <a href="#washingSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Turnkey Line</span>
-            <img src="<?= base_url('assets/img/washing-equipment.jpg') ?>" 
-                 alt="Turnkey Dishwashing Area Setup" class="bakery-card-img" loading="lazy">
+            <span class="bakery-image-tag">Series WS-07</span>
+            <img src="<?= base_url('assets/img/washing-equipment6.jpg') ?>" 
+                 alt="Three Unit Sink 66x24x34+6" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Turnkey Warewash Line</h5>
-            <p>Plumbing layout, scrap zone &amp; clean rack storage</p>
+            <h5>Three Unit Pot Wash Sink</h5>
+            <p>Size: 66"L × 24"W × 34"H + 6" • Triple bowl soak, wash &amp; rinse sink</p>
           </div>
-        </div>
+        </a>
 
       </div>
     </div>
@@ -172,7 +167,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="bakery-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial washing and sink equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial washing and sink equipment.') ?>" 
                target="_blank" rel="noopener" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               <span>Inquire on WhatsApp</span>
@@ -267,80 +262,93 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           <tbody>
             <tr>
               <td>
-                <span class="table-model-title">Single Bowl Pot Wash Sink</span>
-                <span class="table-model-sub">Model: SWS-1B Big Bowl</span>
+                <span class="table-model-title">Undercounter Dishwasher</span>
+                <span class="table-model-sub">Model: UDW-50 Front Load</span>
               </td>
-              <td>24" x 24" x 34" (Bowl: 20"x20"x16" Deep)</td>
-              <td>1 Extra-Deep Pot Washing Bowl</td>
-              <td>16 SWG Food Grade AISI 304 SS</td>
-              <td>SS Lever Waste Coupling with Strainer Basket</td>
+              <td>500x500mm Basket (30 Racks/Hr)</td>
+              <td>Front-Loading Automatic Wash</td>
+              <td>16 SWG AISI 304 Heavy Chamber</td>
+              <td>Built-in Detergent &amp; Rinse Aid Pumps</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Single Bowl Pot Wash Sink">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Undercounter Dishwasher">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Double Bowl Sink with Drainboard</span>
-                <span class="table-model-sub">Model: DWS-2B Drain Board</span>
+                <span class="table-model-title">Hood Type Dish Washer</span>
+                <span class="table-model-sub">Model: HDW-60 Pass-Through</span>
               </td>
-              <td>60" x 24" x 34" (Dual 18"x18"x14" Bowls)</td>
-              <td>2 Bowls + Left/Right Drying Drainboard</td>
-              <td>16/18 SWG Certified Stainless Steel</td>
-              <td>Dual Water Mixer Tap &amp; 150mm High Backsplash</td>
+              <td>60"L × 29"W × 80"H (60 Racks/Hr)</td>
+              <td>Pass-Through Hood Type Machine</td>
+              <td>Double-Skin Sound &amp; Thermal Insulated SS</td>
+              <td>Auto Hood Lift &amp; Digital Temp Control</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Double Bowl Sink with Drainboard">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Hood Type Dish Washer">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Triple Bowl Sanitizing Pot Station</span>
-                <span class="table-model-sub">Model: TWS-3B Three Stage</span>
+                <span class="table-model-title">Dumping Table with Garbage</span>
+                <span class="table-model-sub">Model: DTG-48 Scrap Bench</span>
               </td>
-              <td>84" x 28" x 34" (Three 22"x22"x16" Bowls)</td>
-              <td>Wash, Rinse, &amp; Sanitize 3-Bay Unit</td>
+              <td>48"L × 24"W × 34"H + 6" Splashback</td>
+              <td>Scraps Chute &amp; Waste Disposal Hole</td>
+              <td>16 SWG Food Grade SS 304</td>
+              <td>Marine Anti-Drip Edge &amp; Chute Ring</td>
+              <td class="text-center text-nowrap">
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Dumping Table with Garbage">Get Quote</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-model-title">Two Unit Sink with Splashback</span>
+                <span class="table-model-sub">Model: TUS-48 Dual Pot</span>
+              </td>
+              <td>48"L × 24"W × 34"H + 6" Backsplash</td>
+              <td>Dual Deep Pot Washing Bowls</td>
+              <td>16 SWG Heavy Seamless AISI 304</td>
+              <td>Lever Waste Couplings &amp; Dual Swivel Taps</td>
+              <td class="text-center text-nowrap">
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Two Unit Sink with Splashback">Get Quote</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-model-title">Soil Dish Table with Garbage</span>
+                <span class="table-model-sub">Model: SDT-48 Dish Landing</span>
+              </td>
+              <td>48"L × 24"W × 34"H + 15" Overhead Rack</td>
+              <td>Waste Scrap Chute &amp; Landing Table</td>
+              <td>16 SWG Certified SS 304</td>
+              <td>Integrated Overhead Plate Rack &amp; Chute</td>
+              <td class="text-center text-nowrap">
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Soil Dish Table with Garbage">Get Quote</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-model-title">Wall Hanging Plate &amp; Glass Rack</span>
+                <span class="table-model-sub">Model: WPR-Wall Rack</span>
+              </td>
+              <td>Custom Wall Mount Length</td>
+              <td>Slotted Plate &amp; Tumbler Glass Tiers</td>
+              <td>High-Grade SS Wire &amp; Tube Frame</td>
+              <td>Removable Stainless Drip Drain Tray</td>
+              <td class="text-center text-nowrap">
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Wall Hanging Plate and Glass Rack">Get Quote</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-model-title">Three Unit Pot Wash Sink</span>
+                <span class="table-model-sub">Model: TUS-66 Triple Bay</span>
+              </td>
+              <td>66"L × 24"W × 34"H + 6" Backsplash</td>
+              <td>3 Deep Soak, Wash &amp; Rinse Bowls</td>
               <td>Heavy 16 SWG SS 304 Full Welded</td>
-              <td>Overhead Spring Pre-Rinse Shower Faucet</td>
+              <td>Pre-Rinse Shower Faucet &amp; Lever Drains</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Triple Bowl Pot Wash Sink">Get Quote</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-model-title">Dishwasher Infeed &amp; Outfeed Benches</span>
-                <span class="table-model-sub">Model: DWT-IO Hood Match</span>
-              </td>
-              <td>Custom 48" to 72" Track Guide Tables</td>
-              <td>Pre-Scrap Infeed Table + Clean Rack Outfeed</td>
-              <td>Seamless Heavy SS 304 Track Lip</td>
-              <td>Integrated Pre-Rinse Sink &amp; Scrap Chute Ring</td>
-              <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Dishwasher Landing Tables">Get Quote</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-model-title">Under-Sink Stainless Grease Trap</span>
-                <span class="table-model-sub">Model: SGT-50 Grease Interceptor</span>
-              </td>
-              <td>50 to 150 Liters Flow Capacity (25 GPM)</td>
-              <td>3 Removable Baffle Separation Chambers</td>
-              <td>Corrosion-Resistant SS 304 with Air-Tight Lid</td>
-              <td>Removable Solids Strainer &amp; Odor-Proof Gasket</td>
-              <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Stainless Steel Grease Trap">Get Quote</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-model-title">Mobile Utensil Landing Trolley</span>
-                <span class="table-model-sub">Model: MUT-3T 3-Tier Cart</span>
-              </td>
-              <td>36" x 24" x 36" (3 Pressed SS Shelves)</td>
-              <td>3 Heavy Pressed Trays (150kg Payload)</td>
-              <td>Heavy 25mm Round Tubular SS 304 Frame</td>
-              <td>4 Swivel Castors (2 with Total Lock Brakes)</td>
-              <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Utensil Landing Trolley">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Three Unit Pot Wash Sink">Get Quote</button>
               </td>
             </tr>
           </tbody>
@@ -478,7 +486,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </div>
 
             <!-- Primary WhatsApp Action -->
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and sizing for commercial washing and sink equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and sizing for commercial washing and sink equipment.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-2.5 text-decoration-none">
               <div class="cta-btn-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -499,8 +507,8 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             <!-- Direct Phone Fallback -->
             <div class="cta-phone-note text-center mt-3 pt-2.5 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>

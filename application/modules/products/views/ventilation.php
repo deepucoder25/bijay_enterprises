@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -53,96 +48,83 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
     <div class="bakery-scroll-container position-relative mb-4 pb-2">
       <div class="bakery-scroll-track" id="bakeryScrollTrack">
 
-        <!-- Image 1: Wall Canopy Exhaust Hood -->
+        <!-- Image 1: Commercial Bowl Chopper -->
         <a href="#ventilationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series KV-01</span>
             <img src="<?= base_url('assets/img/kitchen-ventilation.jpg') ?>" 
-                 alt="Wall Canopy Exhaust Hood" class="bakery-card-img" loading="lazy">
+                 alt="Commercial Bowl Chopper Machine" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Wall Canopy Hood</h5>
-            <p>Box canopy with SS baffle filters &amp; gutter</p>
+            <h5>Commercial Bowl Chopper</h5>
+            <p>Heavy SS rotating bowl cutter for vegetables &amp; meat</p>
           </div>
         </a>
 
-        <!-- Image 2: Island Canopy Exhaust Hood -->
+        <!-- Image 2: Round SS Clay Tandoor -->
         <a href="#ventilationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series KV-02</span>
-            <img src="<?= base_url('assets/img/kitchen-ventilation.jpg') ?>" 
-                 alt="Island Canopy Exhaust Hood" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment1.jpg') ?>" 
+                 alt="Round SS Clay Tandoor 30x30x34" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Island Canopy Hood</h5>
-            <p>Dual-sided suction for central cooking blocks</p>
+            <h5>Round SS Clay Tandoor</h5>
+            <p>Size: 30"L × 30"W × 34"H • Castor wheels &amp; insulated pot</p>
           </div>
         </a>
 
-        <!-- Image 3: Centrifugal Exhaust Blower -->
+        <!-- Image 3: Soil Dish Table with Garbage -->
         <a href="#ventilationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series KV-03</span>
-            <img src="<?= base_url('assets/img/kitchen-ventilation.jpg') ?>" 
-                 alt="Centrifugal Exhaust Blower" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment2.jpg') ?>" 
+                 alt="Soil Dish Table with Garbage 48x24x34+15" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Centrifugal Blower</h5>
-            <p>High static pressure SISW centrifugal fan</p>
+            <h5>Soil Dish Table with Garbage</h5>
+            <p>Size: 48"L × 24"W × 34"H + 15" • Overhead shelf &amp; scrap chute</p>
           </div>
         </a>
 
-        <!-- Image 4: Galvanized Iron (GI) Ductwork -->
+        <!-- Image 4: Four Door Vertical Deep Fridge -->
         <a href="#ventilationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series KV-04</span>
-            <img src="<?= base_url('assets/img/kitchen-ventilation.jpg') ?>" 
-                 alt="Galvanized Iron Ductwork" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment3.jpg') ?>" 
+                 alt="Four Door Vertical Deep Fridge 50x29x80" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>GI Air Ducting</h5>
-            <p>20/22 gauge lock-formed airtight duct lines</p>
+            <h5>Four Door Vertical Deep Fridge</h5>
+            <p>Size: 50"L × 29"W × 80"H • Sub-zero upright commercial storage</p>
           </div>
         </a>
 
-        <!-- Image 5: Fresh Air Supply Make-Up Louvers -->
+        <!-- Image 5: Double Deck Baking Oven with Trolley -->
         <a href="#ventilationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series KV-05</span>
-            <img src="<?= base_url('assets/img/kitchen-ventilation.jpg') ?>" 
-                 alt="Fresh Air Make-Up Louver" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment4.jpg') ?>" 
+                 alt="Double Deck Baking Oven with Trolley" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Fresh Air Supply</h5>
-            <p>Filtered intake lowering kitchen ambient heat</p>
+            <h5>Double Deck Baking Oven</h5>
+            <p>Dough Wt: 30–100g • Dual decks with mobile trolley</p>
           </div>
         </a>
 
-        <!-- Image 6: Electrostatic Precipitator (ESP) -->
+        <!-- Image 6: Planetary Food Mixer -->
         <a href="#ventilationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series KV-06</span>
-            <img src="<?= base_url('assets/img/kitchen-ventilation.jpg') ?>" 
-                 alt="Electrostatic Precipitator Air Scrubber" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment5.jpg') ?>" 
+                 alt="Planetary Food Mixer 10 to 50 Liters" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>ESP Smoke Scrubber</h5>
-            <p>95%+ smoke &amp; odor extraction for city zones</p>
+            <h5>Planetary Food Mixer</h5>
+            <p>Capacity: 10L – 50L • Whisk, beater &amp; spiral hook</p>
           </div>
         </a>
-
-        <!-- Image 7: Turnkey Ventilation Setup -->
-        <div class="bakery-image-card">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Turnkey Line</span>
-            <img src="<?= base_url('assets/img/kitchen-ventilation.jpg') ?>" 
-                 alt="Turnkey Kitchen Exhaust System Setup" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Turnkey Exhaust Line</h5>
-            <p>CFM sizing, chimney riser &amp; motor wiring</p>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -172,7 +154,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="bakery-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for kitchen ventilation and exhaust systems.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for kitchen ventilation and exhaust systems.') ?>" 
                target="_blank" rel="noopener" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               <span>Inquire on WhatsApp</span>
@@ -257,9 +239,9 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           <thead>
             <tr>
               <th>Equipment Model</th>
-              <th>Standard Size / Capacity</th>
-              <th>Airflow Capacity (CFM)</th>
-              <th>Motor Rating / Static Pressure</th>
+              <th>Standard Capacity / Size</th>
+              <th>Power / Fuel Source</th>
+              <th>Specifications / Drive</th>
               <th>Key Safety Feature</th>
               <th class="text-center text-nowrap">Action</th>
             </tr>
@@ -267,80 +249,80 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           <tbody>
             <tr>
               <td>
-                <span class="table-model-title">Box Type Wall Canopy Hood</span>
-                <span class="table-model-sub">Model: KVH-W60 Wall Hood</span>
+                <span class="table-model-title">Commercial Bowl Chopper</span>
+                <span class="table-model-sub">Model: KBC-01 Heavy Duty</span>
               </td>
-              <td>6 to 12 Feet Length (42" Depth)</td>
-              <td>2,500 to 6,000 CFM Custom</td>
-              <td>Stainless 18 SWG SS 304 Seamless Build</td>
-              <td>SS Removable Baffle Filters &amp; Oil Drain Valve</td>
+              <td>Commercial Food &amp; Meat Processing</td>
+              <td>230V / 415V Dual Speed Motor</td>
+              <td>Rotating SS Cutter Bowl &amp; Curved Blades</td>
+              <td>Safety Cover Interlock &amp; Emergency Halt</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Wall Canopy Exhaust Hood">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Commercial Bowl Chopper">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Island Type Double Canopy Hood</span>
-                <span class="table-model-sub">Model: KVH-I80 Island Hood</span>
+                <span class="table-model-title">Round SS Clay Tandoor</span>
+                <span class="table-model-sub">Model: CKR-TR30 Round Pot</span>
               </td>
-              <td>8 to 16 Feet Central Ceiling Mount</td>
-              <td>5,000 to 12,000 CFM Dual Bank</td>
-              <td>Heavy Ceiling Suspension Rods (SS 304)</td>
-              <td>Dual Perimeter Grease Gutter &amp; V-Bank Filters</td>
+              <td>30"L × 30"W × 34"H External Frame</td>
+              <td>Charcoal / High-Pressure Gas Burner</td>
+              <td>Heavy Castor Wheels &amp; Ash Clean Vent</td>
+              <td>Dual Mineral Insulation &amp; Secure Skewer Lid</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Island Canopy Exhaust Hood">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Round SS Clay Tandoor">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Centrifugal Exhaust Blower (SISW)</span>
-                <span class="table-model-sub">Model: KEB-3000 SISW Blower</span>
+                <span class="table-model-title">Soil Dish Table with Garbage</span>
+                <span class="table-model-sub">Model: CKS-DT48 Scrap Station</span>
               </td>
-              <td>Impeller Dia: 18" to 32" Heavy MS</td>
-              <td>3,000 to 8,000 CFM High Pressure</td>
-              <td>3 HP to 7.5 HP Crompton/Havells TEFC 415V</td>
-              <td>Belt Drive Guard, Drain Plug &amp; Vibration Springs</td>
+              <td>48"L × 24"W × 34"H + 15" Overhead Rack</td>
+              <td>Scraps Chute &amp; Waste Bin Well</td>
+              <td>16 SWG Certified SS 304 Construction</td>
+              <td>Integrated Overhead Plate Rack &amp; Chute</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Centrifugal Exhaust Blower">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Soil Dish Table with Garbage">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Fresh Air Make-Up Supply Blower</span>
-                <span class="table-model-sub">Model: FAB-2500 Air Replenish</span>
+                <span class="table-model-title">Four Door Vertical Deep Fridge</span>
+                <span class="table-model-sub">Model: CKF-4D Sub-Zero</span>
               </td>
-              <td>Inline DIDW Air Intake Cabinet</td>
-              <td>2,500 to 7,000 CFM Positive Flow</td>
-              <td>2 HP to 5 HP 3-Phase Energy Efficient</td>
-              <td>Washable Pre-Filter Pleats &amp; Weatherproof Louver</td>
+              <td>50"L × 29"W × 80"H (4 Solid Doors)</td>
+              <td>-18°C to -22°C Deep Freezing</td>
+              <td>Heavy Tropicalized Compressor Motor</td>
+              <td>Heated Door Gaskets &amp; Auto Defrost Timer</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Fresh Air Supply Blower">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Four Door Vertical Deep Fridge">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Electrostatic Smoke Precipitator (ESP)</span>
-                <span class="table-model-sub">Model: ESP-4000 Pure Air</span>
+                <span class="table-model-title">Double Deck Baking Oven</span>
+                <span class="table-model-sub">Model: CKO-2D Trolley Oven</span>
               </td>
-              <td>Dual Ionizer &amp; Collector Cell Block</td>
-              <td>4,000 to 8,000 CFM High Efficiency</td>
-              <td>High Voltage Solid-State Power Pack (<500W)</td>
-              <td>95%+ Smoke Extraction &amp; Auto Interlock Safety Trip</td>
+              <td>Dough Wt: 30–100g (4–6 Baking Trays)</td>
+              <td>Commercial LPG / 415V Electric</td>
+              <td>Independent Chamber Temperature PID</td>
+              <td>Mobile Wheel Trolley Base &amp; Overheat Safety</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Electrostatic Precipitator (ESP)">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Double Deck Baking Oven">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Commercial Wet Chemical Air Scrubber</span>
-                <span class="table-model-sub">Model: CWS-6000 Odor Neutral</span>
+                <span class="table-model-title">Planetary Food Mixer</span>
+                <span class="table-model-sub">Model: CKM-50 Multi-Speed</span>
               </td>
-              <td>Stainless Spray Chamber + Mist Eliminator</td>
-              <td>5,000 to 10,000 CFM Industrial</td>
-              <td>Continuous SS Chemical Circulating Pump</td>
-              <td>Odor &amp; Spark Arrestor for Charcoal Tandoor Lines</td>
+              <td>10 Liters to 50 Liters Bowl Capacity</td>
+              <td>Single Phase 230V / 3 Phase 415V</td>
+              <td>3 Variable Gear Speeds (Whisk, Beater, Hook)</td>
+              <td>Thermal Overload Protection &amp; Bowl Safety Wire</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Wet Air Scrubber">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Planetary Food Mixer">Get Quote</button>
               </td>
             </tr>
           </tbody>
@@ -478,7 +460,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </div>
 
             <!-- Primary WhatsApp Action -->
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and CFM sizing for kitchen exhaust ventilation.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and CFM sizing for kitchen exhaust ventilation.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-2.5 text-decoration-none">
               <div class="cta-btn-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -499,8 +481,8 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             <!-- Direct Phone Fallback -->
             <div class="cta-phone-note text-center mt-3 pt-2.5 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>

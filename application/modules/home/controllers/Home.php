@@ -13,8 +13,8 @@ class Home extends MX_Controller
     }
     function index()
     {
-        $data['title'] = $this->comp['company3'] . ", " . $this->comp['phone'];
-        $data['description'] = "Your trusted partner for hassle-free, secure relocations. Efficient home and office moving services with competitive pricing. Contact " . $this->comp['company3'] . " at " . $this->comp['phone'] . ".";
+        $data['title'] = "Commercial Kitchen & Bakery Equipment Manufacturer in Siliguri | " . $this->comp['company3'];
+        $data['description'] = $this->comp['company3'] . " is a premier manufacturer & supplier of Commercial Kitchen Equipment, Bakery Machines, Display Counters, Industrial Refrigeration, Exhaust Ventilation & LPG Gas Pipelines in Siliguri, North Bengal. Call " . $this->comp['phone'] . ".";
 
         $data['module'] = "home";
         $data['view_file'] = "home";

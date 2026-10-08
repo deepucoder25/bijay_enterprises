@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -53,96 +48,70 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
     <div class="bakery-scroll-container position-relative mb-4 pb-2">
       <div class="bakery-scroll-track" id="bakeryScrollTrack">
 
-        <!-- Image 1: Indian & Continental Gas Cooking Range -->
+        <!-- Image 1: Round Stainless Steel Clay Tandoor -->
         <a href="#kitchenSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series CK-01</span>
-            <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" 
-                 alt="Indian & Continental Cooking Range" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment1.jpg') ?>" 
+                 alt="Round SS Clay Tandoor 30x30x34" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Gas Cooking Ranges</h5>
-            <p>2, 3, 4 &amp; 6 heavy cast iron burners</p>
+            <h5>Round SS Clay Tandoor</h5>
+            <p>Size: 30"L × 30"W × 34"H • Castor wheels &amp; insulated pot</p>
           </div>
         </a>
 
-        <!-- Image 2: High-Pressure Chinese Wok Station -->
+        <!-- Image 2: Soil Dish Table with Garbage Chute -->
         <a href="#kitchenSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series CK-02</span>
-            <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" 
-                 alt="High-Pressure Chinese Wok Station" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment2.jpg') ?>" 
+                 alt="Soil Dish Table with Garbage Chute 48x24x34+15" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Chinese Wok Station</h5>
-            <p>High-heat jet burners &amp; water wash cooling</p>
+            <h5>Soil Dish Table with Garbage</h5>
+            <p>Size: 48"L × 24"W × 34"H + 15" • Overhead shelf &amp; scrap chute</p>
           </div>
         </a>
 
-        <!-- Image 3: Stainless Steel Insulated Tandoor -->
+        <!-- Image 3: Four Door Vertical Deep Fridge -->
         <a href="#kitchenSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series CK-03</span>
-            <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" 
-                 alt="SS Insulated Clay Tandoor" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment3.jpg') ?>" 
+                 alt="Four Door Vertical Deep Fridge 50x29x80" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>SS Clay Tandoor</h5>
-            <p>Square &amp; round pots with mineral insulation</p>
+            <h5>Four Door Vertical Deep Fridge</h5>
+            <p>Size: 50"L × 29"W × 80"H • Sub-zero upright commercial storage</p>
           </div>
         </a>
 
-        <!-- Image 4: Commercial Deep Fryer & Griddle -->
+        <!-- Image 4: Double Deck Baking Oven with Trolley -->
         <a href="#kitchenSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series CK-04</span>
-            <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" 
-                 alt="Commercial Deep Fryer & Griddle" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment4.jpg') ?>" 
+                 alt="Double Deck Baking Oven with Trolley" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Deep Fryers &amp; Griddles</h5>
-            <p>Thermostatic control &amp; cold zone sediment traps</p>
+            <h5>Double Deck Baking Oven</h5>
+            <p>Dough Wt: 30–100g • Dual decks with mobile trolley</p>
           </div>
         </a>
 
-        <!-- Image 5: Bulk Cooking Stock Pot Stove -->
+        <!-- Image 5: Planetary Food Mixer -->
         <a href="#kitchenSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series CK-05</span>
-            <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" 
-                 alt="Commercial Stock Pot Stove" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment5.jpg') ?>" 
+                 alt="Planetary Food Mixer 10 to 50 Liters" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Stock Pot Stoves</h5>
-            <p>Heavy payload bulk catering &amp; gravy boiling</p>
+            <h5>Planetary Food Mixer</h5>
+            <p>Capacity: 10L – 50L • Whisk, beater &amp; spiral hook</p>
           </div>
         </a>
-
-        <!-- Image 6: Tilting Boiling Pan -->
-        <a href="#kitchenSpecs" class="bakery-image-card js-jump-link text-decoration-none">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Series CK-06</span>
-            <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" 
-                 alt="Tilting Braising & Boiling Pan" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Tilting Braising Pan</h5>
-            <p>Manual &amp; motorized worm gear tilting</p>
-          </div>
-        </a>
-
-        <!-- Image 7: Turnkey Kitchen Setup -->
-        <div class="bakery-image-card">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Turnkey Line</span>
-            <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" 
-                 alt="Turnkey Commercial Kitchen Setup" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Turnkey Kitchen Setup</h5>
-            <p>Custom layout, fabrication &amp; commissioning</p>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -172,7 +141,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="bakery-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial kitchen equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial kitchen equipment.') ?>" 
                target="_blank" rel="noopener" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               <span>Inquire on WhatsApp</span>
@@ -267,80 +236,67 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           <tbody>
             <tr>
               <td>
-                <span class="table-model-title">4-Burner Gas Range with Oven</span>
-                <span class="table-model-sub">Model: CKR-4B Range Master</span>
+                <span class="table-model-title">Round SS Clay Tandoor</span>
+                <span class="table-model-sub">Model: CKR-TR30 Round Pot</span>
               </td>
-              <td>4 Heavy Pots + 100L Bottom Oven</td>
-              <td>LPG / PNG Gas Manifold (40 kW)</td>
-              <td>Heavy Cast Iron Pan Supports &amp; Pilot Knobs</td>
-              <td>Flame Failure Device &amp; Insulated Front Handles</td>
+              <td>30"L × 30"W × 34"H External Frame</td>
+              <td>Charcoal / High-Pressure Gas Burner</td>
+              <td>Heavy Castor Wheels &amp; Ash Clean Vent</td>
+              <td>Dual Mineral Insulation &amp; Secure Skewer Lid</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="4-Burner Gas Range">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Round SS Clay Tandoor">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Chinese Wok Cooking Station</span>
-                <span class="table-model-sub">Model: CWS-2B Turbo Jet</span>
+                <span class="table-model-title">Soil Dish Table with Garbage Chute</span>
+                <span class="table-model-sub">Model: CKT-SD48 Dish Station</span>
               </td>
-              <td>2 Main Woks + 1 Soup Pot Station</td>
-              <td>High-Pressure LPG / PNG (Commercial)</td>
-              <td>Air-Assisted High-Heat Turbo Jet Burners</td>
-              <td>Water Curtain Backsplash &amp; Auto Fuel Cutoff</td>
+              <td>48"L × 24"W × 34"H + 15" Overhead Shelf</td>
+              <td>Non-Electric SS 304 Sanitary Worktable</td>
+              <td>Integrated Scraps Chute &amp; 2-Tier Storage</td>
+              <td>16 SWG Sound-Deadened Tabletop &amp; Bullet Feet</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Chinese Wok Cooking Station">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Soil Dish Table with Garbage">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">SS Insulated Clay Tandoor</span>
-                <span class="table-model-sub">Model: SCT-36 Square Tandoor</span>
+                <span class="table-model-title">Four Door Vertical Deep Fridge</span>
+                <span class="table-model-sub">Model: CKR-DF50 4-Door Upright</span>
               </td>
-              <td>36" External SS / 30" Handcrafted Clay Pot</td>
-              <td>Charcoal Fuel or High-Pressure Gas Burner</td>
-              <td>Dual-Layer Mineral Wool 1200°C Thermal Barrier</td>
-              <td>Heavy SS Casters with Swivel Locks &amp; Skewer Lid</td>
+              <td>50"L × 29"W × 80"H (1000L Gross Volume)</td>
+              <td>230V / 50Hz Tropicalized Compressor</td>
+              <td>-18°C to -22°C Deep Sub-Zero Control</td>
+              <td>Digital Microprocessor &amp; Auto Defrost Heater</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="SS Clay Tandoor">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Four Door Vertical Deep Fridge">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Commercial Double Deep Fryer</span>
-                <span class="table-model-sub">Model: CDF-28 Dual Tank</span>
+                <span class="table-model-title">Double Deck Baking Oven with Trolley</span>
+                <span class="table-model-sub">Model: CKO-DD2 Double Deck</span>
               </td>
-              <td>14L + 14L Dual Independent Wells</td>
-              <td>Electric 3-Phase 415V (12 kW) or Commercial LPG</td>
-              <td>Precision Thermostat 50°C–200°C Range</td>
-              <td>Cold Zone Sediment Trap &amp; Over-Temperature Trip</td>
+              <td>2 Independent Decks (Dough: 30–100g)</td>
+              <td>Electric 3-Phase 415V or Commercial LPG</td>
+              <td>Independent Top &amp; Bottom PID Heat Knobs</td>
+              <td>Heavy Caster Trolley &amp; Tempered Glass Window</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Commercial Double Deep Fryer">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Double Deck Baking Oven">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Heavy-Duty Stock Pot Stove</span>
-                <span class="table-model-sub">Model: SPS-80 Bulk Cooker</span>
+                <span class="table-model-title">Planetary Food Mixer</span>
+                <span class="table-model-sub">Model: CKM-PM40 Planetary Unit</span>
               </td>
-              <td>Up to 150L Heavy Stock &amp; Gravy Pots</td>
-              <td>High-BTU Cast Iron M2 / T-Burners (LPG)</td>
-              <td>16 SWG SS Reinforced Top Frame Structure</td>
-              <td>Spill Catch Pan &amp; Industrial Isolation Valve</td>
+              <td>10 Liters to 50 Liters Removable Bowl</td>
+              <td>3-Speed Geared Motor (230V / 415V)</td>
+              <td>Stainless Wire Whisk, Flat Beater &amp; Dough Hook</td>
+              <td>Safety Grid Interlock &amp; Emergency Stop Switch</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Stock Pot Stove">Get Quote</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-model-title">Commercial Tilting Boiling Pan</span>
-                <span class="table-model-sub">Model: TBP-120 Bratt Pan</span>
-              </td>
-              <td>120 Liters Net Stainless Bowl</td>
-              <td>Three Phase 415V Electric or High-Heat LPG</td>
-              <td>Precision Worm Gear Mechanical Handwheel Tilt</td>
-              <td>Balanced Counterweighted Spring Lid &amp; Safety Halt</td>
-              <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Tilting Boiling Pan">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Planetary Food Mixer">Get Quote</button>
               </td>
             </tr>
           </tbody>
@@ -478,7 +434,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </div>
 
             <!-- Primary WhatsApp Action -->
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and layout planning for commercial kitchen equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and layout planning for commercial kitchen equipment.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-2.5 text-decoration-none">
               <div class="cta-btn-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -499,8 +455,8 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             <!-- Direct Phone Fallback -->
             <div class="cta-phone-note text-center mt-3 pt-2.5 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>

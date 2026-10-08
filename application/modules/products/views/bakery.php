@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -56,16 +51,16 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
     <div class="bakery-scroll-container position-relative mb-4 pb-2">
       <div class="bakery-scroll-track" id="bakeryScrollTrack">
 
-        <!-- Image 1: Industrial Rotary Rack Oven -->
+        <!-- Image 1: Automatic Dough Divider -->
         <a href="#bakerySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series BK-01</span>
-            <img src="<?= base_url('assets/img/products/bakery_rotary_rack_oven.jpg') ?>" 
-                 alt="Rotary Rack Oven" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/bakery1.jpg') ?>" 
+                 alt="Automatic Dough Divider 30-100g" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Rotary Rack Oven</h5>
-            <p>High-volume bread, bun &amp; cookie baking</p>
+            <h5>Automatic Dough Divider</h5>
+            <p>Dough Wt: 30–100g • Precision hydraulic batch divider</p>
           </div>
         </a>
 
@@ -73,79 +68,66 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
         <a href="#bakerySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series BK-02</span>
-            <img src="<?= base_url('assets/img/products/bakery_spiral_dough_mixer.jpg') ?>" 
-                 alt="Spiral Dough Mixer" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/bakery2.jpg') ?>" 
+                 alt="Spiral Dough Mixer 30-100g" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
             <h5>Spiral Dough Mixer</h5>
-            <p>Dual-speed heavy dough kneading</p>
+            <p>Dough Wt: 30–100g • Heavy dual-speed stainless bowl kneader</p>
           </div>
         </a>
 
-        <!-- Image 3: Commercial 3-Deck Baking Oven -->
+        <!-- Image 3: Commercial Three Deck Baking Oven -->
         <a href="#bakerySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series BK-03</span>
-            <img src="<?= base_url('assets/img/products/bakery_deck_oven.jpg') ?>" 
-                 alt="Commercial Deck Oven" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/bakery-equipment.jpg') ?>" 
+                 alt="Three Deck Baking Oven 54x30x54" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>3-Deck Baking Oven</h5>
-            <p>Artisan stone-hearth baking chambers</p>
+            <h5>Three Deck Baking Oven</h5>
+            <p>Size: 54"L × 30"W × 54"H • 3 independent stone-hearth decks</p>
           </div>
         </a>
 
-        <!-- Image 4: Commercial Planetary Mixer -->
+        <!-- Image 4: Double Deck Baking Oven with Trolley -->
         <a href="#bakerySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series BK-04</span>
-            <img src="<?= base_url('assets/img/products/bakery_planetary_mixer.jpg') ?>" 
-                 alt="Planetary Food Mixer" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment4.jpg') ?>" 
+                 alt="Double Deck Baking Oven with Trolley" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Planetary Mixer</h5>
-            <p>Creams, batters, cake sponge &amp; whisking</p>
+            <h5>Double Deck Baking Oven</h5>
+            <p>Dough Wt: 30–100g • 2-deck commercial oven with mobile trolley</p>
           </div>
         </a>
 
-        <!-- Image 5: Fermentation Proofing Cabinet -->
+        <!-- Image 5: Planetary Food Mixer -->
         <a href="#bakerySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series BK-05</span>
-            <img src="<?= base_url('assets/img/products/bakery_proofer_chamber.jpg') ?>" 
-                 alt="Fermentation Proofer Cabinet" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/kitchen-equipment5.jpg') ?>" 
+                 alt="Planetary Food Mixer 10 to 50 Liters" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Fermentation Proofer</h5>
-            <p>Climate-regulated humidity &amp; 38°C proofing</p>
+            <h5>Planetary Food Mixer</h5>
+            <p>Capacity: 10L – 50L • Whisk, beater &amp; spiral hook attachments</p>
           </div>
         </a>
 
-        <!-- Image 6: Reversible Dough Sheeter -->
+        <!-- Image 6: Digital Convection Oven -->
         <a href="#bakerySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series BK-06</span>
-            <img src="<?= base_url('assets/img/products/bakery_dough_sheeter.jpg') ?>" 
-                 alt="Reversible Dough Sheeter" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/bakery3.jpg') ?>" 
+                 alt="Digital Convection Oven" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Dough Sheeter</h5>
-            <p>Puff pastry &amp; croissant precision lamination</p>
+            <h5>Digital Convection Oven</h5>
+            <p>Countertop circulation oven • Uniform 360° crust browning</p>
           </div>
         </a>
-
-        <!-- Image 7: Complete Commercial Bakery Setup -->
-        <div class="bakery-image-card">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Turnkey Line</span>
-            <img src="<?= base_url('assets/img/bakery-equipment.jpg') ?>" 
-                 alt="Complete Bakery Equipment Setup" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Complete Bakery Setup</h5>
-            <p>Turnkey plant layout, fabrication &amp; commissioning</p>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -179,7 +161,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="bakery-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial bakery equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial bakery equipment.') ?>" 
                target="_blank" rel="noopener" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               <span>Inquire on WhatsApp</span>
@@ -274,23 +256,23 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           <tbody>
             <tr>
               <td>
-                <span class="table-model-title">Rotary Rack Oven</span>
-                <span class="table-model-sub">Model: RRO-120 Pro</span>
+                <span class="table-model-title">Automatic Dough Divider</span>
+                <span class="table-model-sub">Model: BDD-36 Hydraulic</span>
               </td>
-              <td>120–200 Loaves (16–18 Trays)</td>
-              <td>Diesel / Commercial LPG / 415V Elec</td>
-              <td>50°C–300°C Digital PID (±2°C)</td>
-              <td>Turntable Slip Clutch &amp; Flame Sensor</td>
+              <td>30g–100g Dough Weight (36 Pcs/Cut)</td>
+              <td>1.5 kW Electric 415V / 230V</td>
+              <td>Hydraulic Batch Press &amp; Knife Grid</td>
+              <td>Dual Hand Safety Start &amp; Overload Relief</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Rotary Rack Oven">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Automatic Dough Divider">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
                 <span class="table-model-title">Spiral Dough Mixer</span>
-                <span class="table-model-sub">Model: HSM-80 Dual Speed</span>
+                <span class="table-model-sub">Model: BSM-80 Dual Speed</span>
               </td>
-              <td>40kg–80kg Dough (80L Bowl)</td>
+              <td>30g–100g / 40kg–80kg Dough Batch</td>
               <td>Three Phase 415V (3.5 kW / 5.5 kW)</td>
               <td>Dual-Speed Timer Controlled</td>
               <td>Safety Grid Interlock Microswitch</td>
@@ -300,54 +282,54 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">3-Deck Baking Oven</span>
-                <span class="table-model-sub">Model: BDO-3D Hearth</span>
+                <span class="table-model-title">Three Deck Baking Oven</span>
+                <span class="table-model-sub">Model: BDO-3D 54x30x54</span>
               </td>
-              <td>6–9 Trays (400x600mm)</td>
+              <td>54"L × 30"W × 54"H (6–9 Trays)</td>
               <td>18 kW Electric (415V) or Commercial LPG</td>
               <td>Indep. Top/Bottom PID per Deck</td>
-              <td>Refractory Cordierite Stone Hearths</td>
+              <td>High-Density Rockwool &amp; Cordierite Hearths</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="3-Deck Baking Oven">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Three Deck Baking Oven">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Planetary Whipping Mixer</span>
-                <span class="table-model-sub">Model: BPM-40 Confectionery</span>
+                <span class="table-model-title">Double Deck Baking Oven</span>
+                <span class="table-model-sub">Model: BDO-2D with Trolley</span>
               </td>
-              <td>40 Liters (12kg Batter)</td>
-              <td>Single Phase 230V / Three Phase 415V</td>
-              <td>3 Gear Speeds (108/195/355 RPM)</td>
-              <td>Thermal Overload Cutoff Relay</td>
+              <td>30g–100g Dough Wt (4–6 Trays)</td>
+              <td>Commercial LPG / 415V Electric</td>
+              <td>Independent Chamber PID Controllers</td>
+              <td>Mobile Wheel Trolley Base &amp; Overheat Safety</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Planetary Whipping Mixer">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Double Deck Baking Oven">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Fermentation Proofer</span>
-                <span class="table-model-sub">Model: BPC-32 Proofer</span>
+                <span class="table-model-title">Planetary Food Mixer</span>
+                <span class="table-model-sub">Model: BPM-50 Confectionery</span>
               </td>
-              <td>32 Baking Trays (Dual Door)</td>
-              <td>2.6 kW Single Phase 230V 50Hz</td>
-              <td>Ambient to 50°C &amp; 50%–95% RH</td>
-              <td>Automatic Float Water Level Sensor</td>
+              <td>10 Liters to 50 Liters Bowl Options</td>
+              <td>Single Phase 230V / 3 Phase 415V</td>
+              <td>3-Speed Gearbox (Whisk, Beater, Hook)</td>
+              <td>Thermal Overload Relay &amp; Safety Wire Guard</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Fermentation Proofer">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Planetary Food Mixer">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Reversible Dough Sheeter</span>
-                <span class="table-model-sub">Model: BDS-520 Laminator</span>
+                <span class="table-model-title">Digital Convection Oven</span>
+                <span class="table-model-sub">Model: BCO-04 Countertop</span>
               </td>
-              <td>500mm x 2000mm Conveyor</td>
-              <td>0.75 kW Motor (230V / 415V)</td>
-              <td>0.5mm to 35mm Micrometer Lever</td>
-              <td>Safety Roller Guard &amp; Foot Pedal Halt</td>
+              <td>4 Trays (400x600mm) High Airflow</td>
+              <td>230V / 415V Rapid Electric Heating</td>
+              <td>50°C–300°C Digital Fan Circulation</td>
+              <td>Double Tempered Heat Shield Glass Door</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Reversible Dough Sheeter">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Digital Convection Oven">Get Quote</button>
               </td>
             </tr>
           </tbody>
@@ -485,7 +467,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </div>
 
             <!-- Primary WhatsApp Action -->
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and layout planning for commercial bakery equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and layout planning for commercial bakery equipment.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-2.5 text-decoration-none">
               <div class="cta-btn-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -506,8 +488,8 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             <!-- Direct Phone Fallback -->
             <div class="cta-phone-note text-center mt-3 pt-2.5 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>

@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -53,96 +48,83 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
     <div class="bakery-scroll-container position-relative mb-4 pb-2">
       <div class="bakery-scroll-track" id="bakeryScrollTrack">
 
-        <!-- Image 1: Chilled Sweet & Pastry Showcase -->
+        <!-- Image 1: Curved Corner Display Counter -->
         <a href="#displaySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series DC-01</span>
             <img src="<?= base_url('assets/img/display-counter.jpg') ?>" 
-                 alt="Chilled Sweet & Pastry Showcase" class="bakery-card-img" loading="lazy">
+                 alt="Curved Corner Display Counter" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Pastry &amp; Sweet Showcase</h5>
-            <p>Gentle forced-air cold (+2°C to +8°C)</p>
+            <h5>Curved Corner Display Counter</h5>
+            <p>Panoramic curved glass corner sweet &amp; bakery showcase</p>
           </div>
         </a>
 
-        <!-- Image 2: Heated Food Display Warmer -->
+        <!-- Image 2: Straight Glass Display Counter -->
         <a href="#displaySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series DC-02</span>
-            <img src="<?= base_url('assets/img/display-counter.jpg') ?>" 
-                 alt="Heated Food Display Warmer" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/display_counter1.jpg') ?>" 
+                 alt="Straight Glass Display Counter 60x26x52" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Hot Food Display Warmer</h5>
-            <p>Crispy samosa, patties &amp; snack warmer</p>
+            <h5>Straight Glass Display Counter</h5>
+            <p>Size: 60"L × 26"W × 52"H • 3-tier illuminated glass showcase</p>
           </div>
         </a>
 
-        <!-- Image 3: Commercial Bain Marie Counter -->
+        <!-- Image 3: Straight Glass L Type Display Counter -->
         <a href="#displaySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series DC-03</span>
-            <img src="<?= base_url('assets/img/display-counter.jpg') ?>" 
-                 alt="Commercial Bain Marie Counter" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/display_counter2.jpg') ?>" 
+                 alt="Straight Glass L Type Display Counter" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Electric Bain Marie</h5>
-            <p>Multi-pan hot buffet &amp; self-service line</p>
+            <h5>L-Type Straight Glass Counter</h5>
+            <p>Straight glass L-type modular counter with decorative LED front</p>
           </div>
         </a>
 
-        <!-- Image 4: Curved Glass Confectionery Showcase -->
+        <!-- Image 4: Confectionery Showcase -->
         <a href="#displaySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series DC-04</span>
-            <img src="<?= base_url('assets/img/display-counter.jpg') ?>" 
-                 alt="Curved Glass Confectionery Showcase" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/display_counter3.jpg') ?>" 
+                 alt="Confectionery Showcase Counter" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Curved Glass Showcase</h5>
-            <p>10mm toughened panoramic view with LED</p>
+            <h5>Confectionery Showcase Counter</h5>
+            <p>Curved front refrigerated glass display with multi-tier racks</p>
           </div>
         </a>
 
-        <!-- Image 5: Island & Corner Food Display -->
+        <!-- Image 5: Chaat Counter -->
         <a href="#displaySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series DC-05</span>
-            <img src="<?= base_url('assets/img/display-counter.jpg') ?>" 
-                 alt="Island & Corner Food Display" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/display_counter4.jpg') ?>" 
+                 alt="Commercial Chaat Counter" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Corner &amp; Island Units</h5>
-            <p>Bespoke architectural layout sizing</p>
+            <h5>Commercial Chaat Counter</h5>
+            <p>Curved sneeze guard glass • Stainless steel food pan wells</p>
           </div>
         </a>
 
-        <!-- Image 6: Cash & Billing Counter Extension -->
+        <!-- Image 6: Square Glass Display Counter with Backlit Pattern -->
         <a href="#displaySpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series DC-06</span>
-            <img src="<?= base_url('assets/img/display-counter.jpg') ?>" 
-                 alt="Cash & Billing Counter Extension" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/display_counter5.jpg') ?>" 
+                 alt="Square Glass Display Counter" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Billing Counter Station</h5>
-            <p>Matching SS 304 trims &amp; cash drawer</p>
+            <h5>Square Glass Display Counter</h5>
+            <p>4-side glass display with warm LED backlit decorative pattern</p>
           </div>
         </a>
-
-        <!-- Image 7: Turnkey Display Setup -->
-        <div class="bakery-image-card">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Turnkey Line</span>
-            <img src="<?= base_url('assets/img/display-counter.jpg') ?>" 
-                 alt="Turnkey Retail Display Counter Setup" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Turnkey Front Display</h5>
-            <p>Complete sweet shop &amp; cafe interior counters</p>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -172,7 +154,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="bakery-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial display counters.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial display counters.') ?>" 
                target="_blank" rel="noopener" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               <span>Inquire on WhatsApp</span>
@@ -267,80 +249,80 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           <tbody>
             <tr>
               <td>
-                <span class="table-model-title">Chilled Pastry &amp; Cake Showcase</span>
-                <span class="table-model-sub">Model: DCS-4F Cold Luxe</span>
+                <span class="table-model-title">Curved Corner Display Counter</span>
+                <span class="table-model-sub">Model: CDC-Corner Showcase</span>
               </td>
-              <td>4 Feet / 3 Glass Shelves (320L)</td>
-              <td>+2°C to +8°C Digital PID</td>
-              <td>Emerson Forced-Air R134a Compressor</td>
-              <td>10mm Toughened Curved Heated Glass + LED</td>
+              <td>Custom Corner Arc / Multi-Tier Glass</td>
+              <td>+2°C to +8°C or Ambient Display</td>
+              <td>Emerson Forced-Air / Static Chiller</td>
+              <td>10mm Panoramic Curved Toughened Glass + LED</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Chilled Pastry Showcase">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Curved Corner Display Counter">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Heated Food Display Warmer</span>
-                <span class="table-model-sub">Model: DHW-3F Hot Crispy</span>
+                <span class="table-model-title">Straight Glass Display Counter</span>
+                <span class="table-model-sub">Model: SGC-60 Straight Glass</span>
               </td>
-              <td>3 Feet / 2 Slanted SS Shelves</td>
-              <td>+65°C to +85°C Thermostatic</td>
-              <td>Tubular Incoloy Dry Immersion Heaters (1.5 kW)</td>
-              <td>Humidity Water Well + Golden Food LEDs</td>
+              <td>60"L × 26"W × 52"H / 3 Glass Tiers</td>
+              <td>+2°C to +8°C Chilled / Ambient</td>
+              <td>High-Efficiency Tropicalized Compressor</td>
+              <td>Flat Polished Edge Tempered Glass + Warm LED</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Heated Food Warmer">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Straight Glass Display Counter">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Commercial Bain Marie Counter</span>
-                <span class="table-model-sub">Model: DBM-4GN Buffet</span>
+                <span class="table-model-title">L-Type Straight Glass Counter</span>
+                <span class="table-model-sub">Model: LGC-Modular L-Shape</span>
               </td>
-              <td>4 to 6 Gastronorm (GN 1/1) Wells</td>
-              <td>+60°C to +90°C Water Bath</td>
-              <td>2.5 kW Single Phase 230V Electric</td>
-              <td>Sneeze Guard Glass + Drainage Ball Valve</td>
+              <td>Custom L-Shape Configuration &amp; Shelving</td>
+              <td>Multi-Zone Chilled &amp; Dry Ambient</td>
+              <td>Dual Zone Independent Compressors</td>
+              <td>Straight Glass with Custom Front Illuminated Fascia</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Bain Marie Counter">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="L-Type Straight Glass Counter">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Curved Glass Mithai Showcase</span>
-                <span class="table-model-sub">Model: DMS-5C Sweet Royal</span>
+                <span class="table-model-title">Confectionery Showcase Counter</span>
+                <span class="table-model-sub">Model: CSC-Curved Confectionery</span>
               </td>
-              <td>5 Feet / 3 Stepped Trays</td>
-              <td>Ambient / Mild Cool (+10°C to +15°C)</td>
-              <td>Static Cooling Coil / Ambient Vent</td>
-              <td>Ultra-Clear Curved Glass with Mirror SS Trim</td>
+              <td>4ft to 6ft Length / 3 Tier Shelving</td>
+              <td>+2°C to +6°C Humidity-Balanced Cold</td>
+              <td>Low-Noise Chiller with Auto Condensate Evaporator</td>
+              <td>Curved Front Glass with Uniform Cake Shelf Lighting</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Mithai Sweet Showcase">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Confectionery Showcase Counter">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Square Glass Deli Food Showcase</span>
-                <span class="table-model-sub">Model: DDS-6S Minimal</span>
+                <span class="table-model-title">Commercial Chaat Counter</span>
+                <span class="table-model-sub">Model: CCC-48 Chaat Station</span>
               </td>
-              <td>6 Feet / Minimalist Edge Design</td>
-              <td>+2°C to +6°C Chilled Deli Zone</td>
-              <td>Embraco Low-Noise Tropicalized Unit</td>
-              <td>Double-Glazed Heated Glass (Zero Condensation)</td>
+              <td>48" to 72" Length / Integrated GN Pan Wells</td>
+              <td>Ambient Serving / Insulated Ice Wells</td>
+              <td>Self-Contained Hygienic Drainage System</td>
+              <td>Curved Hygienic Sneeze Guard Glass + SS Pick-Up Counter</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Square Glass Deli Showcase">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Commercial Chaat Counter">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Ice Cream &amp; Gelato Display Scoop</span>
-                <span class="table-model-sub">Model: DGC-8T Gelato Tub</span>
+                <span class="table-model-title">Square Glass Display Counter</span>
+                <span class="table-model-sub">Model: SDC-Backlit Floral Luxe</span>
               </td>
-              <td>8 to 12 Standard Gelato Tubs</td>
-              <td>-16°C to -20°C Deep Freezing</td>
-              <td>Danfoss Dual-Circuit Quick Freezing (R404a)</td>
-              <td>Heated Front Curved Glass &amp; Auto Defrost</td>
+              <td>4ft / 5ft Length / 3 Level Shelves</td>
+              <td>+2°C to +8°C Chilled Pastry Display</td>
+              <td>Heavy Hermetic Sealed R134a Compressor</td>
+              <td>4-Side Frameless Glass + Backlit Laser-Cut LED Panel</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Gelato Display Counter">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Square Glass Display Counter">Get Quote</button>
               </td>
             </tr>
           </tbody>
@@ -478,7 +460,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </div>
 
             <!-- Primary WhatsApp Action -->
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and layout planning for food display counters.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and layout planning for food display counters.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-2.5 text-decoration-none">
               <div class="cta-btn-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -499,8 +481,8 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             <!-- Direct Phone Fallback -->
             <div class="cta-phone-note text-center mt-3 pt-2.5 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>

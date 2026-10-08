@@ -6,7 +6,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
     'bc_current' => 'Video Gallery',
     'bc_title_white' => 'Video',
     'bc_title_orange' => 'Gallery',
-    'bc_desc' => 'Watch our step-by-step cargo handling processes, transport safety standards, and global freight forwarding in action.'
+    'bc_desc' => 'Watch machinery demonstrations, factory fabrication walkthroughs, and commercial kitchen setups in action.'
 ]); 
 ?>
 
@@ -18,10 +18,10 @@ $this->load->view('about/dynamic_breadcrumbs', [
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
-                    <h2 class="service-section-title">Logistics Process Videos</h2>
+                    <h2 class="service-section-title">Equipment &amp; Project Demonstration Videos</h2>
                     <div class="about-service-text mb-4">
                         <p>
-                            At <strong><?= $company3 ?></strong>, we maintain complete transparency in our logistics operations. Watch our field videos to see how our trained professionals handle heavy-duty cargo loading, customs clearance, and safe global transportation to ensure a worry-free shipping experience.
+                            At <strong><?= $company3 ?></strong>, we maintain complete transparency in our fabrication and engineering. Watch our workshop and on-site videos to see our heavy-duty commercial kitchen equipment, rotary rack ovens, exhaust blowers, and turnkey installations in action.
                         </p>
                     </div>
 

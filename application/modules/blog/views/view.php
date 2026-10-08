@@ -25,7 +25,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             if (@$query[0]->image && file_exists($image_path)): ?>
                                 <img src="<?= base_url('uploads/blogs/' . @$query[0]->image) ?>" alt="<?= htmlspecialchars(@$query[0]->title) ?>" class="img-fluid w-100 blog-details-img">
                             <?php else: ?>
-                                <img src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
+                                <img src="<?= base_url('assets/img/kitchen_equipment.jpg') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
                             <?php endif; ?>
                         </div>
                         
@@ -61,7 +61,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
                                         <?php
                                         $image_file = $post->image;
                                         $full_path = FCPATH . 'uploads/blogs/' . $image_file;
-                                        $imagePath = ($image_file && file_exists($full_path)) ? base_url('uploads/blogs/' . $image_file) : base_url('assets/images/about/packers_movers.jpg');
+                                        $imagePath = ($image_file && file_exists($full_path)) ? base_url('uploads/blogs/' . $image_file) : base_url('assets/img/kitchen_equipment.jpg');
                                         $custom_slug = !empty($post->slug) ? $post->slug : rtrim(str_replace("--", "-", urlencode(str_replace(" ", "-", str_replace(",", " ", $post->title)))), "-");
                                         ?>
                                         <a href="<?= site_url('blog/'.$custom_slug) ?>" class="d-flex align-items-center gap-3 mb-3 text-decoration-none post-link-item blog-post-link-item">
@@ -85,8 +85,8 @@ $this->load->view('about/dynamic_breadcrumbs', [
                             <div class="mb-3">
                                 <i class="bi bi-headset blog-icon-lg-primary"></i>
                             </div>
-                            <h5 class="fw-bold mb-3">Need Moving Help?</h5>
-                            <p class="text-muted small mb-4">Get a quick and free estimate for your relocation directly from our experts.</p>
+                            <h5 class="fw-bold mb-3">Need Equipment Advice?</h5>
+                            <p class="text-muted small mb-4">Get a quick factory estimate for your commercial kitchen or bakery machinery from our engineers.</p>
                             <button class="btn w-100 fw-bold py-2 rounded-pill shadow-sm blog-btn-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
                                 <i class="bi bi-file-earmark-text me-2"></i> Get a Free Quote
                             </button>
@@ -139,7 +139,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
     "@type": "BlogPosting",
     "headline": "<?= addslashes(@$query[0]->title) ?>",
     "image": [
-        "<?= @$query[0]->image ? base_url('uploads/blogs/' . @$query[0]->image) : base_url('assets/images/about/packers_movers.jpg') ?>"
+        "<?= @$query[0]->image ? base_url('uploads/blogs/' . @$query[0]->image) : base_url('assets/img/kitchen_equipment.jpg') ?>"
     ],
     "datePublished": "<?= date('c', strtotime(@$query[0]->created_at)) ?>",
     "author": {

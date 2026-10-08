@@ -62,8 +62,8 @@ class Blog extends MX_Controller {
         $data['total'] = $total_rows;
         $data['recent_posts'] = array_slice($all_blogs, 0, 5);
 
-        $data['title'] = "Official Blog of ".$this->comp['company3']." India";
-        $data['description'] = "Latest blog of ".$this->comp['company3'];
+        $data['title'] = "Commercial Kitchen & Bakery Equipment Blog | " . $this->comp['company3'];
+        $data['description'] = "Read expert articles, commercial kitchen planning guides, SS 304 fabrication standards, and bakery machinery updates from " . $this->comp['company3'] . " Siliguri.";
         $data['module'] = "blog";
         $data['view_file'] = "blog"; 
 
@@ -102,7 +102,7 @@ class Blog extends MX_Controller {
             $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
             
             $image_file = $selected_blog->image;
-            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
+            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/img/kitchen_equipment.jpg');
             
             $data['module'] = "blog";
             $data['view_file'] = "view"; 

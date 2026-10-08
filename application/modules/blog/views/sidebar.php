@@ -1,11 +1,12 @@
 <div class="widget-items mb-40">
 	<?php
-	$city = "India";
+	$city = "Siliguri";
 	$keyw = array(
-		"Movers near me $city", "Packers and movers in $city", "Moving companies near me $city", "Movers $city", "Packers and movers near me $city",
-		"Removal companies in $city", "Moving services in $city", "Cheap movers in $city", "Local movers in $city", "Local moving companies in $city",
-		"$city best moving companies", "House movers $city", "Packers movers $city", "Moving services near $city", "House removals $city", "Cheap moving companies in $city",
-		"Professional movers in $city", "House movers near $city", "Cheap movers $city", "Best packers and movers in $city", "Affordable movers $city", "International movers from $city", "International moving companies in $city"
+		"Commercial Kitchen Equipment $city", "Bakery Equipment Manufacturer $city", "SS 304 Fabrication $city",
+		"Display Counter Manufacturer $city", "Restaurant Kitchen Setup $city", "Industrial Bakery Ovens $city",
+		"Kitchen Ventilation Hoods $city", "LPG Pipeline Installation $city", "Commercial Refrigerator $city",
+		"Heavy-Duty Gas Ranges $city", "Spiral Dough Kneaders $city", "Pastry Display Showcase $city",
+		"Commercial Food Equipment India", "Hotel Kitchen Equipment $city", "Custom SS Worktables $city"
 	);
 	?>
 	<h6>Relevant Keywords in <?= $city ?></h6>

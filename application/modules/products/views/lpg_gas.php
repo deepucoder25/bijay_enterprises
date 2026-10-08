@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -66,84 +61,6 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
         </a>
 
-        <!-- Image 2: Two-Stage Pressure Regulator -->
-        <a href="#gasSpecs" class="bakery-image-card js-jump-link text-decoration-none">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Series GP-02</span>
-            <img src="<?= base_url('assets/img/gas-pipeline.jpg') ?>" 
-                 alt="Two-Stage Pressure Regulator Station" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Pressure Regulators</h5>
-            <p>1st &amp; 2nd stage steady gas flow reduction</p>
-          </div>
-        </a>
-
-        <!-- Image 3: Class C Seamless Steel Pipeline -->
-        <a href="#gasSpecs" class="bakery-image-card js-jump-link text-decoration-none">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Series GP-03</span>
-            <img src="<?= base_url('assets/img/gas-pipeline.jpg') ?>" 
-                 alt="Class C Seamless Steel Pipeline" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Seamless Gas Pipeline</h5>
-            <p>Heavy IS:1239 high-pressure forged steel</p>
-          </div>
-        </a>
-
-        <!-- Image 4: Gas Leak Detection & Alarm Panel -->
-        <a href="#gasSpecs" class="bakery-image-card js-jump-link text-decoration-none">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Series GP-04</span>
-            <img src="<?= base_url('assets/img/gas-pipeline.jpg') ?>" 
-                 alt="Gas Leak Detection Panel" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Leak Detectors &amp; Alarms</h5>
-            <p>Catalytic hydrocarbon sensor linked to siren</p>
-          </div>
-        </a>
-
-        <!-- Image 5: Emergency Solenoid Shutoff Valve -->
-        <a href="#gasSpecs" class="bakery-image-card js-jump-link text-decoration-none">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Series GP-05</span>
-            <img src="<?= base_url('assets/img/gas-pipeline.jpg') ?>" 
-                 alt="Emergency Solenoid Shutoff Valve" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Auto Solenoid Valves</h5>
-            <p>Trips gas supply in 0.5 sec during any leak</p>
-          </div>
-        </a>
-
-        <!-- Image 6: Appliance Isolation Ball Valves & Hoses -->
-        <a href="#gasSpecs" class="bakery-image-card js-jump-link text-decoration-none">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Series GP-06</span>
-            <img src="<?= base_url('assets/img/gas-pipeline.jpg') ?>" 
-                 alt="Appliance Isolation Valves" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Appliance Isolation Valves</h5>
-            <p>Quarter-turn forged valves &amp; SS braided hoses</p>
-          </div>
-        </a>
-
-        <!-- Image 7: Turnkey Pipeline Project -->
-        <div class="bakery-image-card">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Turnkey Line</span>
-            <img src="<?= base_url('assets/img/gas-pipeline.jpg') ?>" 
-                 alt="Turnkey LPG Pipeline Project Setup" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Turnkey Gas Manifold</h5>
-            <p>Pressure testing, safety certification &amp; handover</p>
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -172,7 +89,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="bakery-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial LPG gas pipeline installation.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial LPG gas pipeline installation.') ?>" 
                target="_blank" rel="noopener" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               <span>Inquire on WhatsApp</span>
@@ -478,7 +395,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </div>
 
             <!-- Primary WhatsApp Action -->
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and sizing for commercial LPG gas pipeline installation.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and sizing for commercial LPG gas pipeline installation.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-2.5 text-decoration-none">
               <div class="cta-btn-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -499,8 +416,8 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             <!-- Direct Phone Fallback -->
             <div class="cta-phone-note text-center mt-3 pt-2.5 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>

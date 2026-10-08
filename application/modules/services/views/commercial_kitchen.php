@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -47,7 +42,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="service-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details on your ' . ($service['title'] ?? 'Commercial Kitchen') . ' services.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details on your ' . ($service['title'] ?? 'Commercial Kitchen') . ' services.') ?>" 
                target="_blank" rel="noopener" class="btn-service-primary">
               <i class="bi bi-whatsapp"></i>
               <span>Consult on WhatsApp</span>
@@ -187,7 +182,7 @@ $scope_list = !empty($service['scope_list']) ? $service['scope_list'] : [
               <span class="badge bg-white text-secondary border fw-semibold px-2 py-1">Online Now</span>
             </div>
 
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant consultation and pricing for ' . ($service['title'] ?? 'Commercial Kitchen Equipment') . '.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant consultation and pricing for ' . ($service['title'] ?? 'Commercial Kitchen Equipment') . '.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-3 text-decoration-none">
               <div class="cta-btn-icon"><i class="bi bi-whatsapp"></i></div>
               <div class="cta-btn-text">
@@ -204,8 +199,8 @@ $scope_list = !empty($service['scope_list']) ? $service['scope_list'] : [
 
             <div class="cta-phone-note text-center mt-3 pt-2 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>

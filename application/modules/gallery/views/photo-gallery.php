@@ -6,7 +6,7 @@ $this->load->view('about/dynamic_breadcrumbs', [
     'bc_current' => 'Photo Gallery',
     'bc_title_white' => 'Photo',
     'bc_title_orange' => 'Gallery',
-    'bc_desc' => 'Explore visual highlights of our cargo handling, warehouse storage, specialized container fleets, and global logistics operations.'
+    'bc_desc' => 'Explore visual highlights of our commercial kitchen installations, SS 304 fabrication projects, bakery units, and custom display counters.'
 ]); 
 ?>
 
@@ -18,10 +18,10 @@ $this->load->view('about/dynamic_breadcrumbs', [
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
-                    <h2 class="service-section-title">Our Logistics Operations in Action</h2>
+                    <h2 class="service-section-title">Our Manufacturing &amp; Installation Projects</h2>
                     <div class="about-service-text mb-4">
                         <p>
-                            Take a look at our on-field photos demonstrating our dedication to safety, careful cargo handling, and organized supply chain management. Our photo gallery highlights our freight standards, secure warehouse storage, and specialized fleets.
+                            Take a look at our on-field photos demonstrating our dedication to precision engineering, food-grade SS 304 fabrication, and turnkey kitchen installations. Our photo gallery highlights completed hotel projects, restaurant setups, bakery units, and custom food display counters.
                         </p>
                     </div>
 

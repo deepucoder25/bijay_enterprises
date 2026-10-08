@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php
   if (!@$description) {
-    $description = $company3 . " India offers reliable and efficient moving and storage solutions, ensuring your belongings are transported safely and securely to your new destination.";
+    $description = $company3 . " is a premier manufacturer and supplier of Commercial Kitchen Equipment, Bakery Machines, Display Counters, Industrial Refrigeration, Kitchen Ventilation, and LPG Gas Pipelines in Siliguri, West Bengal.";
   }
   if (!@$city)
     $city = "$addressRegion";
@@ -99,9 +99,9 @@
     {
       "@context": "http://schema.org",
       "@type": "Product",
-      "sku": "<?= $sku ?>",
-      "mpn": "<?= $mpn ?>",
-      "name": "Packers and Movers Services in <?= $city ?>",
+      "sku": "<?= !empty($sku) ? $sku : 'BE-CKE-001' ?>",
+      "mpn": "<?= !empty($mpn) ? $mpn : 'BE-2026' ?>",
+      "name": "<?= !empty($title) ? htmlspecialchars($title) : ($company3 . ' - Commercial Kitchen & Bakery Equipment in ' . $city) ?>",
       "image": "<?= $img ?>",
       "description": "<?= @$description ?>",
       "url": "<?= $url ?>",
@@ -138,8 +138,6 @@
     }
   </script>
   <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">

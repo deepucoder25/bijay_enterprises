@@ -81,7 +81,7 @@ class MX_Controller
 
         $this->comp['ratingValue'] = "4.9";
         $this->comp['datePublished'] = "15 May, 2026";
-        $this->comp['reviewBody'] = "Best Packing And Moving Company in India.";
+        $this->comp['reviewBody'] = "Best Commercial Kitchen & Bakery Equipment Manufacturer in Siliguri.";
         $this->comp['reviewperson'] = "Arshad Ali";
 
         /* autoload module items */

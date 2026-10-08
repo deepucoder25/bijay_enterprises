@@ -1,10 +1,5 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 
-// Set Contact Link Variables with Safety Fallbacks
-$phone_clean = isset($phone) ? preg_replace('/[^0-9]/', '', $phone) : '9832030973';
-$whatsapp_clean = isset($whatsapp) ? preg_replace('/[^0-9]/', '', $whatsapp) : '9832030973';
-$phone_href = "tel:" . $phone_clean;
-$whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
 ?>
 
 <!-- ==========================================================================
@@ -53,96 +48,83 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
     <div class="bakery-scroll-container position-relative mb-4 pb-2">
       <div class="bakery-scroll-track" id="bakeryScrollTrack">
 
-        <!-- Image 1: 4-Door Vertical Chiller -->
+        <!-- Image 1: 2-Door Worktop Refrigerator -->
         <a href="#refrigerationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series RF-01</span>
             <img src="<?= base_url('assets/img/refrigeration-equipment.jpg') ?>" 
-                 alt="4-Door Vertical Chiller" class="bakery-card-img" loading="lazy">
+                 alt="2-Door Worktop Refrigerator" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>4-Door Upright Chiller</h5>
-            <p>1000L high-volume cold storage (+2°C to +8°C)</p>
+            <h5>2-Door Worktop Refrigerator</h5>
+            <p>Undercounter prep chiller with stainless splashback</p>
           </div>
         </a>
 
-        <!-- Image 2: Undercounter Prep Table -->
+        <!-- Image 2: Curved Glass Chest Freezer -->
         <a href="#refrigerationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series RF-02</span>
-            <img src="<?= base_url('assets/img/refrigeration-equipment.jpg') ?>" 
-                 alt="Undercounter Saladette Prep Counter" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/refrigeration-equipment1.jpg') ?>" 
+                 alt="Curved Glass Chest Freezer 110L" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Saladette Prep Counter</h5>
-            <p>Refrigerated GN pan rail with under-chiller</p>
+            <h5>Curved Glass Chest Freezer</h5>
+            <p>Capacity: 110L • Sliding curved glass top display freezer</p>
           </div>
         </a>
 
-        <!-- Image 3: Commercial Blast Chiller -->
+        <!-- Image 3: Four Door Vertical Deep Fridge -->
         <a href="#refrigerationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series RF-03</span>
-            <img src="<?= base_url('assets/img/refrigeration-equipment.jpg') ?>" 
-                 alt="Commercial Blast Chiller" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/refrigeration-equipment2.jpg') ?>" 
+                 alt="Four Door Vertical Deep Fridge 50x29x80" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Blast Chiller &amp; Freezer</h5>
-            <p>Rapid core cooling +70°C to +3°C in 90 min</p>
+            <h5>Four Door Vertical Deep Fridge</h5>
+            <p>Size: 50"L × 29"W × 80"H • 4-door sub-zero reach-in storage</p>
           </div>
         </a>
 
-        <!-- Image 4: 2-Door Upright Deep Freezer -->
+        <!-- Image 4: Double Door Vertical Refrigerator -->
         <a href="#refrigerationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series RF-04</span>
-            <img src="<?= base_url('assets/img/refrigeration-equipment.jpg') ?>" 
-                 alt="2-Door Upright Deep Freezer" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/refrigeration-equipment3.jpg') ?>" 
+                 alt="Double Door Vertical Refrigerator 50x29x80" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Upright Deep Freezer</h5>
-            <p>Heavy freezing (-18°C to -22°C) storage</p>
+            <h5>Double Door Vertical Refrigerator</h5>
+            <p>Size: 50"L × 29"W × 80"H • 2-door commercial chiller cabinet</p>
           </div>
         </a>
 
-        <!-- Image 5: Stainless Steel Water Cooler -->
+        <!-- Image 5: Double Door Chiller / Refrigerator -->
         <a href="#refrigerationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series RF-05</span>
-            <img src="<?= base_url('assets/img/refrigeration-equipment.jpg') ?>" 
-                 alt="SS Commercial Water Cooler" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/refrigeration-equipment4.jpg') ?>" 
+                 alt="Double Door Chiller Refrigerator 28x29x80" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Industrial Water Cooler</h5>
-            <p>High-capacity cold drinking water dispensers</p>
+            <h5>Double Door Chiller / Refrigerator</h5>
+            <p>Size: 28"L × 29"W × 80"H • Slim dual-door reach-in chiller</p>
           </div>
         </a>
 
-        <!-- Image 6: Back Bar Under-Counter Chiller -->
+        <!-- Image 6: Work Top Refrigerator with Shelf -->
         <a href="#refrigerationSpecs" class="bakery-image-card js-jump-link text-decoration-none">
           <div class="bakery-image-frame">
             <span class="bakery-image-tag">Series RF-06</span>
-            <img src="<?= base_url('assets/img/refrigeration-equipment.jpg') ?>" 
-                 alt="Back Bar Beverage Cooler" class="bakery-card-img" loading="lazy">
+            <img src="<?= base_url('assets/img/refrigeration-equipment5.jpg') ?>" 
+                 alt="Work Top Refrigerator with Overhead Shelf 72x26x34+15+10" class="bakery-card-img" loading="lazy">
           </div>
           <div class="bakery-image-caption">
-            <h5>Back Bar Drink Cooler</h5>
-            <p>Double glass door display &amp; LED illumination</p>
+            <h5>Work Top Refrigerator with Shelf</h5>
+            <p>Size: 72"L × 26"W × 34"H + 15" + 10" • 2-tier overhead rack</p>
           </div>
         </a>
-
-        <!-- Image 7: Complete Cold Room Setup -->
-        <div class="bakery-image-card">
-          <div class="bakery-image-frame">
-            <span class="bakery-image-tag">Turnkey Line</span>
-            <img src="<?= base_url('assets/img/refrigeration-equipment.jpg') ?>" 
-                 alt="Turnkey Commercial Cold Storage Setup" class="bakery-card-img" loading="lazy">
-          </div>
-          <div class="bakery-image-caption">
-            <h5>Turnkey Cold Rooms</h5>
-            <p>Walk-in chiller &amp; freezer room fabrication</p>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -172,7 +154,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           </div>
 
           <div class="bakery-content-actions mt-4 d-flex flex-wrap gap-3">
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial refrigeration equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need details and pricing for commercial refrigeration equipment.') ?>" 
                target="_blank" rel="noopener" class="btn btn-primary-custom d-inline-flex align-items-center gap-2">
               <i class="bi bi-whatsapp"></i>
               <span>Inquire on WhatsApp</span>
@@ -267,80 +249,80 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
           <tbody>
             <tr>
               <td>
-                <span class="table-model-title">4-Door Vertical Upright Chiller</span>
-                <span class="table-model-sub">Model: GRC-1000L Chiller</span>
+                <span class="table-model-title">2-Door Worktop Refrigerator</span>
+                <span class="table-model-sub">Model: WTR-2D Undercounter</span>
               </td>
-              <td>1000 Liters (8 Adjustable Shelves)</td>
-              <td>+2°C to +8°C Digital PID</td>
-              <td>Emerson Copeland Tropicalized (R134a)</td>
-              <td>Self-Closing Reversible Magnetic Doors</td>
+              <td>Standard Prep Counter / 2 Doors</td>
+              <td>+2°C to +8°C Uniform Cold</td>
+              <td>High-Efficiency Tropicalized Compressor</td>
+              <td>Stainless Splashback &amp; Magnetic Door Gaskets</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="4-Door Vertical Chiller">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="2-Door Worktop Refrigerator">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">4-Door Vertical Deep Freezer</span>
-                <span class="table-model-sub">Model: GRF-1000L Freezer</span>
+                <span class="table-model-title">Curved Glass Chest Freezer</span>
+                <span class="table-model-sub">Model: CGF-110L Display</span>
               </td>
-              <td>1000 Liters (8 SS Wire Shelves)</td>
-              <td>-18°C to -22°C Deep Freeze</td>
-              <td>Embraco Heavy-Duty Low Back Pressure (R404a)</td>
+              <td>110 Liters Storage Capacity</td>
+              <td>-18°C to -24°C Deep Freezing</td>
+              <td>Heavy Hermetic Low-Noise Compressor</td>
+              <td>Sliding Curved Glass Lid &amp; Internal Basket</td>
+              <td class="text-center text-nowrap">
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Curved Glass Chest Freezer">Get Quote</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="table-model-title">Four Door Vertical Deep Fridge</span>
+                <span class="table-model-sub">Model: VDF-4D 50x29x80</span>
+              </td>
+              <td>50"L × 29"W × 80"H (4 Solid Doors)</td>
+              <td>-18°C to -22°C Sub-Zero Storage</td>
+              <td>Embraco Heavy-Duty Tropicalized Motor</td>
               <td>Heated Perimeter Door Gaskets &amp; Auto Defrost</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="4-Door Vertical Freezer">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Four Door Vertical Deep Fridge">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">2-Door Undercounter Saladette</span>
-                <span class="table-model-sub">Model: UCS-2D Prep Master</span>
+                <span class="table-model-title">Double Door Vertical Refrigerator</span>
+                <span class="table-model-sub">Model: VDR-2D 50x29x80</span>
               </td>
-              <td>350L Chilled Cabinet + 6x GN 1/3 Pan Rail</td>
-              <td>+2°C to +8°C Uniform Cold</td>
-              <td>Low-Noise Danfoss Hermetic Compressor</td>
-              <td>Food Grade HDPE Cutting Board Worktop</td>
+              <td>50"L × 29"W × 80"H (2 Large Doors)</td>
+              <td>+2°C to +8°C Chilled Storage</td>
+              <td>Emerson Copeland Forced-Air Cooling</td>
+              <td>Digital Thermostat PID &amp; Reversible Doors</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Undercounter Prep Table">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Double Door Vertical Refrigerator">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Commercial Blast Chiller &amp; Freezer</span>
-                <span class="table-model-sub">Model: RBC-10T Shock Chiller</span>
+                <span class="table-model-title">Double Door Chiller / Refrigerator</span>
+                <span class="table-model-sub">Model: DDC-28 Slim Vertical</span>
               </td>
-              <td>10 GN 1/1 Trays / 40kg Batch</td>
-              <td>+70°C to +3°C (90m) / -18°C (240m)</td>
-              <td>High-Capacity Multi-Circuit Embraco Motor</td>
-              <td>Core Food Needle Temperature Probe &amp; HACCP Alert</td>
+              <td>28"L × 29"W × 80"H (Compact Footprint)</td>
+              <td>+2°C to +8°C Upright Chilling</td>
+              <td>Low-Power Sub-Tropicalized Compressor</td>
+              <td>Multi-Level Adjustable Wire Shelves &amp; Locks</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Commercial Blast Chiller">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Double Door Chiller Refrigerator">Get Quote</button>
               </td>
             </tr>
             <tr>
               <td>
-                <span class="table-model-title">Stainless Steel Water Cooler</span>
-                <span class="table-model-sub">Model: SWC-150 Commercial</span>
+                <span class="table-model-title">Work Top Refrigerator with Shelf</span>
+                <span class="table-model-sub">Model: WTR-72 Overhead 2-Tier</span>
               </td>
-              <td>150L Storage / 150 LPH Cooling Rate</td>
-              <td>+10°C to +15°C Refreshing Cold</td>
-              <td>Tecumseh / Emerson Hermetic Reciprocating</td>
-              <td>Food Grade SS 304 Inner Tank &amp; Float Cutoff</td>
+              <td>72"L × 26"W × 34"H + 15" + 10"</td>
+              <td>+2°C to +8°C Food Prep &amp; Storage</td>
+              <td>Undercounter Heavy-Duty R134a Compressor</td>
+              <td>Dual-Tier SS Shelving &amp; Prep Worktop</td>
               <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Stainless Steel Water Cooler">Get Quote</button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-model-title">Back Bar Under-Counter Chiller</span>
-                <span class="table-model-sub">Model: BBC-3G Triple Glass</span>
-              </td>
-              <td>330 Liters (Approx 280 Beverage Cans)</td>
-              <td>+2°C to +10°C Chilled Beverage</td>
-              <td>Quiet Sub-Desk Compressor (R600a / R134a)</td>
-              <td>Double Glazed Toughened Glass with Cylinder Locks</td>
-              <td class="text-center text-nowrap">
-                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Back Bar Beverage Chiller">Get Quote</button>
+                <button type="button" class="btn btn-matrix-quote js-open-quote" data-model="Work Top Refrigerator with Shelf">Get Quote</button>
               </td>
             </tr>
           </tbody>
@@ -478,7 +460,7 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             </div>
 
             <!-- Primary WhatsApp Action -->
-            <a href="<?= $whatsapp_base ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and sizing for commercial refrigeration equipment.') ?>" 
+            <a href="<?= $whatsapphtml ?>&text=<?= urlencode('Hello Bijay Enterprises, I need instant quotation and sizing for commercial refrigeration equipment.') ?>" 
                target="_blank" rel="noopener" class="btn-cta-whatsapp mb-2.5 text-decoration-none">
               <div class="cta-btn-icon">
                 <i class="bi bi-whatsapp"></i>
@@ -499,8 +481,8 @@ $whatsapp_base = "https://api.whatsapp.com/send?phone=91" . $whatsapp_clean;
             <!-- Direct Phone Fallback -->
             <div class="cta-phone-note text-center mt-3 pt-2.5 border-top">
               <span class="text-muted small">Prefer a phone call? </span>
-              <a href="<?= $phone_href ?>" class="cta-phone-link fw-bold small">
-                <i class="bi bi-telephone-fill me-1"></i>+91 <?= $phone_clean ?>
+              <a <?= $phonehtml ?> class="cta-phone-link fw-bold small">
+                <i class="bi bi-telephone-fill me-1"></i><?= $phone ?>
               </a>
             </div>
           </div>
